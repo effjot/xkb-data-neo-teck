@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+THIS_PACKAGE=xkb-data
+THIS_SCRIPT=preinst
+
+#INCLUDE_SHELL_LIB#
+
+case $1 in
+  upgrade|install)
+  if dpkg --compare-versions "$2" lt-nl 1.6-2; then
+    remove_conffile_lookup $THIS_PACKAGE /etc/X11/xkb/base.xml
+  fi
+  ;;
+esac
+
+#DEBHELPER#
+
+# vim:set ai et sw=2 ts=2 tw=80:

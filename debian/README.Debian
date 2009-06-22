@@ -54,43 +54,6 @@ Since 0.8-3, all the files in /etc/X11/xkb/ were moved to
 /usr/share/X11/xkb/symbols. If you want to clean /etc/X11/xkb/, you need
 to run dpkg -P xlibs.
 
-Customised layouts
-------------------
-
-Since 0.8-1, layouts are read from /usr/share/X11/xkb/symbols and no
-more from /etc/X11/xkb/symbols. Thus, layouts are no more conffiles.
-The good way to have a custom layout is to create one's own layout that
-includes other layouts and customises some keys you want to modify.
-
-Do not modify directly files /usr/share/X11/xkb/symbols.
-
-For instance, to create a French layout altering the 'a' key, create a
-/usr/share/X11/xkb/symbols/my_fr file containing the following lines
-(without the pipes):
-
-   |   partial alphanumeric_keys
-   |   xkb_symbols "my_fr" {
-   |       include "fr"
-   |       key <AD01> { [ a, A, oe, OE ] };
-   |   };
-
-To have it appear in your desktop environment layout manager, add
-"my_fr" in /etc/X11/xkb/base.xml as a new layout. For
-example, insert the following lines (without the pipes):
-
-    |    <layout>
-    |      <configItem>
-    |        <name>my_fr</name>
-    |        <shortDescription>MyFr</shortDescription>
-    |        <description>French (customized)</description>
-    |      </configItem>
-    |      <variantList/>
-    |    </layout>
-
-/etc/X11/xkb/base.xml is a configuration file.
-
-Mohammed Adnène Trojette <adn+deb@diwi.org>  Sun, 23 Sep 2007 00:05:50 +0200
-
 Your 'Fn' key is not working
 ----------------------------
 
