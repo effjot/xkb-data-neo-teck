@@ -5,6 +5,7 @@ xkeyboard-config (1.6-2) UNRELEASED; urgency=low
   * Update xsfbs to 5693792171d885769e58dcccc053c08b11acd12a
   * Update to debhelper version 7
     + Fix up dh_clean calls
+  * Update standards version to 3.8.3.0. No changes necessary.
 
   [ Julien Cristau ]
   * Don't install base.xml in /etc/X11/xkb.  Modifying this creates more
