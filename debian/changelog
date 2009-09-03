@@ -3,6 +3,8 @@ xkeyboard-config (1.6-2) UNRELEASED; urgency=low
   [ David Nusinow ]
   * Add a note about re-enabling ctrl-alt-backspace killing to NEWS.Debian.
   * Update xsfbs to 5693792171d885769e58dcccc053c08b11acd12a
+  * Update to debhelper version 7
+    + Fix up dh_clean calls
 
   [ Julien Cristau ]
   * Don't install base.xml in /etc/X11/xkb.  Modifying this creates more
