@@ -56,6 +56,7 @@ po/*.gmo
 po/*.pot
 po/messages.mo
 po/stamp-po
+rules/base.extras.xml
 rules/base.xml
 rules/base.lst
 rules/base
@@ -64,6 +65,17 @@ semantics/semantics.dir
 symbols/symbols.dir
 tests/*.lst
 types/types.dir
+rules/extras/base.l1v1_s.part
+rules/extras/base.l2_s.part
+rules/extras/base.l2v2_s.part
+rules/extras/base.l3_s.part
+rules/extras/base.l3v3_s.part
+rules/extras/base.l4_s.part
+rules/extras/base.l4v4_s.part
+rules/extras/base.ml1_s.part
+rules/extras/base.ml1v1_s.part
+rules/extras/base.ml_s.part
+rules/extras/base.mlv_s.part
 rules/compat/base.l2_s.part
 rules/compat/base.l3_s.part
 rules/compat/base.l4_s.part
@@ -78,6 +90,8 @@ tests/mxkbledpanel/mxkbledpanel
 tests/mxkbledpanel/mxkbledpanel._man
 po/stamp-it
 rules/evdev
+rules/evdev.extras.xml
+rules/evdev.extras.xml.in
 rules/evdev.lst
 rules/evdev.xml
 rules/evdev.xml.in
