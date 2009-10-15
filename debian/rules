@@ -38,7 +38,7 @@ $(STAMP_DIR)/build: config.status
 clean: xsfclean
 	dh_testdir
 	dh_testroot
-	[ ! -f Makefile ] || $(MAKE) distclean
+	[ ! -f Makefile ] || $(MAKE) maintainer-clean
 	rm -rf $$(find -name Makefile.in)
 	rm -f aclocal.m4 configure install-sh intltool-*.in
 	rm -f missing po/Makefile.in.in

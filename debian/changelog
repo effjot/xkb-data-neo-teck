@@ -11,6 +11,7 @@ xkeyboard-config (1.7-1) UNRELEASED; urgency=low
   * Don't install base.xml in /etc/X11/xkb.  Modifying this creates more
     problems than it solves (closes: #497341).
   * New upstream release.
+  * Clean up using maintainer-clean instead of distclean.
 
  -- Julien Cristau <jcristau@debian.org>  Thu, 15 Oct 2009 13:36:53 +0200
 
