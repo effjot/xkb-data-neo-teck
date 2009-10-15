@@ -1,4 +1,4 @@
-xkeyboard-config (1.6-2) unstable; urgency=low
+xkeyboard-config (1.7-1) unstable; urgency=low
 
   * The current defaults do not enable the traditional
     Ctrl-Alt-Backspace key combination to kill the X server. If you
