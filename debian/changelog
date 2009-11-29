@@ -1,4 +1,4 @@
-xkeyboard-config (1.7-1) UNRELEASED; urgency=low
+xkeyboard-config (1.7-1) unstable; urgency=low
 
   [ David Nusinow ]
   * Add a note about re-enabling ctrl-alt-backspace killing to NEWS.Debian
@@ -17,7 +17,7 @@ xkeyboard-config (1.7-1) UNRELEASED; urgency=low
     + fix error in German translation (closes: #532642)
   * Clean up using maintainer-clean instead of distclean.
 
- -- Julien Cristau <jcristau@debian.org>  Thu, 15 Oct 2009 13:36:53 +0200
+ -- Julien Cristau <jcristau@debian.org>  Sun, 29 Nov 2009 11:47:09 +0100
 
 xkeyboard-config (1.6-1) unstable; urgency=low
 
