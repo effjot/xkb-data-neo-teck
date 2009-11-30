@@ -11,7 +11,11 @@ case $1 in
   configure)
   if dpkg --compare-versions "$2" lt-nl 1.6-2; then
     remove_conffile_commit /etc/X11/xkb/base.xml
-    rmdir --ignore-fail-on-non-empty /etc/X11/xkb 2>/dev/null
+    if [ -h /etc/X11/xkb ]; then
+      rm /etc/X11/xkb
+    elif [ -d /etc/X11/xkb ]; then
+      rmdir --ignore-fail-on-non-empty /etc/X11/xkb
+    fi
   fi
   ;;
 esac
