@@ -1,10 +1,10 @@
-xkeyboard-config (1.7-2) UNRELEASED; urgency=low
+xkeyboard-config (1.7-2) unstable; urgency=low
 
   * Apparently some people have /etc/X11/xkb as a symlink, which makes rmdir
     fail.  Try to handle that case as well (closes: #558761).  Thanks, Arjan
     Opmeer!
 
- -- Julien Cristau <jcristau@debian.org>  Mon, 30 Nov 2009 13:42:03 +0100
+ -- Julien Cristau <jcristau@debian.org>  Sat, 16 Jan 2010 20:39:49 +0000
 
 xkeyboard-config (1.7-1) unstable; urgency=low
 
