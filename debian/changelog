@@ -1,3 +1,9 @@
+xkeyboard-config (1.7-3) UNRELEASED; urgency=low
+
+  * Remove myself from Uploaders
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 23 Jan 2010 01:43:20 +0100
+
 xkeyboard-config (1.7-2) unstable; urgency=low
 
   * Apparently some people have /etc/X11/xkb as a symlink, which makes rmdir
