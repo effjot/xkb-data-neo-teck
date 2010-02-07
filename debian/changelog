@@ -1,8 +1,12 @@
 xkeyboard-config (1.8-1) UNRELEASED; urgency=low
 
+  [ Julien Cristau ]
   * Remove myself from Uploaders
   * New upstream release
     + Fix Win key as third level chooser (closes: #531771)
+
+  [ Cyril Brulebois ]
+  * Add udeb needed for the graphical installer: xkb-data-udeb.
 
  -- Julien Cristau <jcristau@debian.org>  Sun, 07 Mar 2010 14:50:26 +0100
 
