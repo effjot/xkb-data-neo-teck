@@ -7,6 +7,7 @@ xkeyboard-config (1.8-1) UNRELEASED; urgency=low
 
   [ Cyril Brulebois ]
   * Add udeb needed for the graphical installer: xkb-data-udeb.
+  * Add myself to Uploaders.
 
  -- Julien Cristau <jcristau@debian.org>  Sun, 07 Mar 2010 14:50:26 +0100
 
