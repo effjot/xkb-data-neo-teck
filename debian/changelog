@@ -9,6 +9,7 @@ xkeyboard-config (1.8-1) UNRELEASED; urgency=low
   * Add udeb needed for the graphical installer: xkb-data-udeb.
   * Add myself to Uploaders.
   * Bump Standards-Version from 3.8.3 to 3.8.4 (no changes needed).
+  * Add Depends: ${misc:Depends} to xkb-data.
 
  -- Julien Cristau <jcristau@debian.org>  Sun, 07 Mar 2010 14:50:26 +0100
 
