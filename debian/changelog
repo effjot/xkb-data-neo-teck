@@ -1,4 +1,4 @@
-xkeyboard-config (1.8-1) UNRELEASED; urgency=low
+xkeyboard-config (1.8-1) unstable; urgency=low
 
   [ Julien Cristau ]
   * Remove myself from Uploaders
@@ -11,7 +11,7 @@ xkeyboard-config (1.8-1) UNRELEASED; urgency=low
   * Bump Standards-Version from 3.8.3 to 3.8.4 (no changes needed).
   * Add Depends: ${misc:Depends} to xkb-data.
 
- -- Julien Cristau <jcristau@debian.org>  Sun, 07 Mar 2010 14:50:26 +0100
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 15 Mar 2010 14:24:43 +0100
 
 xkeyboard-config (1.7-2) unstable; urgency=low
 
