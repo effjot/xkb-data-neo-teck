@@ -1,2 +1,3 @@
+#git=git://anongit.freedesktop.org/xkeyboard-config
 version=3
 http://xlibs.freedesktop.org/xkbdesc/ xkeyboard-config-(.*)\.tar\.gz
