@@ -1,3 +1,12 @@
+xkeyboard-config (1.8-2) unstable; urgency=low
+
+  * Add revert-goodmap-badmap-for-apple.diff patch to make apple:goodmap and
+    apple:badmap options available again. Some users are still affected by
+    this issue, so restore those options for now (Closes: #604671). Thanks,
+    Corsac, for reporting and checking the fix!
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 23 Nov 2010 19:10:26 +0100
+
 xkeyboard-config (1.8-1) unstable; urgency=low
 
   [ Julien Cristau ]
