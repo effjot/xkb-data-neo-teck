@@ -1,3 +1,10 @@
+xkeyboard-config (1.8-3) UNRELEASED; urgency=low
+
+  * Point to /usr/share/X11/xkb/rules/base.lst in README.Debian, thanks to
+    Riku Saikkonen for the suggestion (Closes: #487951).
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 15 Jan 2011 02:13:18 +0100
+
 xkeyboard-config (1.8-2) unstable; urgency=low
 
   * Add revert-goodmap-badmap-for-apple.diff patch to make apple:goodmap and

@@ -1,6 +1,12 @@
 Notes about the Debian xkb-data package
 =======================================
 
+Available models, layouts, variants, and options
+------------------------------------------------
+
+One can have a look at the following file:
+  /usr/share/X11/xkb/rules/base.lst
+
 Support of Apple keyboards
 --------------------------
 
