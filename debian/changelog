@@ -9,6 +9,8 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
   * Point to /usr/share/X11/xkb/rules/base.lst in README.Debian, thanks to
     Riku Saikkonen for the suggestion (Closes: #487951).
   * Great debian/rules cleanup:
+    + Remove deb target, dpkg-buildpackage's -i does the right thing, and
+      “-rfakeroot” has been the default for a while.
     + Remove dir target, no longer used.
     + Stop removing rules/compat/base.l[2-4]*.part, they are no longer
       generated automatically.
