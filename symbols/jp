@@ -116,6 +116,34 @@ xkb_symbols "OADG109A" {
     key <AE13> { [ yen, bar 	] };
 };
 
+// 86 keys with kana map
+partial alphanumeric_keys
+xkb_symbols "kana86" {
+
+    include "pc(function)"
+    include "pc(editing)"
+    include "keypad(numoperdecsep)"
+    include "altwin(menu)"
+    include "jp(kana)"
+    include "jp(OADG109A)"
+    name[Group1]= "Japan - Kana 86";
+
+    key <ESC> {		[ Escape	]	};
+    key <NMLK> {	[ Num_Lock, Pointer_EnableKeys		]	};
+    key <BKSP> {	[ BackSpace	]	};
+    key  <TAB> {	[ Tab, ISO_Left_Tab ]	};
+    key <RTRN> {	[ Return	]	};
+    key <LFSH> {	[ Shift_L	]	};
+    key <RTSH> {	[ Shift_R	]	};
+    key <LWIN> {	[ Super_L	]	};
+    key <LALT> {	[ Alt_L		]	};
+    key <SPCE> {	[ space		]	};
+    key <RALT> {	[ Alt_R		]	};
+// for compatability with other keyboards connected at the same time
+    key <RWIN> {	[ Super_R		]	};
+    key <RCTL> {	[ Control_R		]	};
+};
+
 partial alphanumeric_keys
 xkb_symbols "kana" {
 
@@ -210,4 +238,13 @@ xkb_symbols "nicola_f_bs" {
     key <AC11> { [ BackSpace, BackSpace ] };
     key <AC12> { [ Escape               ] };
     key <AB11> { [ at, grave            ] };
+};
+
+// Copied from macintosh_vndr/jp
+partial alphanumeric_keys
+xkb_symbols "mac" {
+    name[Group1]	= "Japan - Macintosh";
+    include "jp(kana)"
+
+    replace key <CAPS> { [ Caps_Lock ] };
 };

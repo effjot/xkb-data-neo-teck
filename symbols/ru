@@ -298,7 +298,7 @@ xkb_symbols "udm" {
 
     key	<AE01> {	[	 question,	    exclam,    1,       1 	]	};
     key	<AE02> {	[	parenleft,        quotedbl,    2,       2	]	};
-    key	<AE03> {	[      parenright,      numbersign,    3,       3	]	};
+    key	<AE03> {	[      parenright,      numerosign,    3,       3	]	};
     key	<AE04> {	[	    colon,       semicolon,    4,       4	]	};
     key	<AE05> {	[	 asterisk,	   percent,    5,       5	]	};
     key	<AE06> {	[      0x010004dd,	0x010004dc,    6,       6	]	};
@@ -484,3 +484,48 @@ xkb_symbols "bak" {
     include "level3(ralt_switch)"
 };
 
+// Serbian charecters added as third level symbols to Russian keyboard layout.
+
+partial alphanumeric_keys
+xkb_symbols "srp" {
+    include "ru(common)"
+    include "level3(ralt_switch)"
+
+    name[Group1]= "Russia - Serbian";
+
+    key <AE03> { [ 3, numerosign ] };
+    key <AE04> { [ 4, semicolon ] };
+    key <AE05> { [ 5, percent ] };
+    key <AE06> { [ 6, colon ] };
+    key <AE07> { [ 7, question ] };
+    key <AE08> { [ 8, asterisk ] };
+    key <AB10> { [ period, comma ] };
+    key <BKSL> { [ backslash, slash ] };
+    key	<AD01> { [ Cyrillic_shorti, Cyrillic_SHORTI, U458, U408 ] };
+    key	<AD06> { [ Cyrillic_en, Cyrillic_EN, U45A, U40A ] };
+    key	<AC08> { [ Cyrillic_el, Cyrillic_EL, U459, U409 ] };
+    key	<AC09> { [ Cyrillic_de, Cyrillic_DE, U45F, U40F ] };
+    key	<AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, U452, U402 ] };
+    key	<AB02> { [ Cyrillic_che, Cyrillic_CHE, U45B, U40B ] };
+};
+
+// Mari language layout
+// based on Russian standard keyboard
+// http://www.marlamuter.ru/
+partial alphanumeric_keys
+xkb_symbols "chm" {
+    include "ru(common)"
+    
+    name[Group1]= "Russia - Mari";
+
+    key.type[group1]="FOUR_LEVEL_ALPHABETIC";
+    key <AC04> { [      Cyrillic_a,     Cyrillic_A,    U04D3,       U04D2     ] };
+    key <AD03> { [      Cyrillic_u, Cyrillic_U,    U04F1,       U04F0     ] };
+    key <AC02> { [      Cyrillic_ui,    Cyrillic_UI,   U04F9,       U04F8     ] };
+    key <AD06> { [      Cyrillic_n, Cyrillic_N,    U04A5,       U04A4     ] };
+    key <AC11> { [      Cyrillic_e, Cyrillic_E,    U04E9,       U04E8     ] };
+    key <AC10> { [      Cyrillic_zh,    Cyrillic_ZH,   U04EB,       U04EA     ] };
+    key <AC01> { [      Cyrillic_f, Cyrillic_F,     UF537,      UF536     ] };
+
+    include "level3(ralt_switch)"
+};
