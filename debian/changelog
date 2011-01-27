@@ -17,6 +17,9 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
     + Call touch in clean to restore the empty file which gets deleted by
       quilt when unpatching rules/base.o_k.part; this avoid its showing up
       as “deleted” in “git status”.
+    + Try and keep the udeb's size low: Replace multiple spaces with a
+      single space character. For this version, installed size goes down
+      from 3.5MB to 3.0MB.
 
  -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
 

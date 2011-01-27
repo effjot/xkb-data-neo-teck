@@ -70,6 +70,10 @@ install: build
 	cp -r $(CURDIR)/debian/xkb-data/* $(CURDIR)/debian/xkb-data-udeb
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/locale
 
+	# Now try and save some space, by getting rid of multiple spaces:
+	find $(CURDIR)/debian/xkb-data-udeb/usr/share/X11 -type f -print0 \
+	  | xargs -0 perl -i -pe 's/[ \t]+/ /g'
+
 # Build architecture-dependent files here.
 binary-arch: build install
 # We have nothing to do by default.
