@@ -14,6 +14,9 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
       generated automatically.
     + More generically, stop removing files which weren't cleaned, that's
       been fixed.
+    + Call touch in clean to restore the empty file which gets deleted by
+      quilt when unpatching rules/base.o_k.part; this avoid its showing up
+      as “deleted” in “git status”.
 
  -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
 

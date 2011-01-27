@@ -50,6 +50,8 @@ clean: xsfclean
 	-rm -f rules/base.xml
 	-rm -f po/.intltool-merge-cache config.status.lineno
 	dh_clean
+	# Work around quilt's removing empty files:
+	touch rules/base.o_k.part
 
 deb:
 	dpkg-buildpackage -rfakeroot -i'/\.git|/\.svn'
