@@ -10,6 +10,8 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
     Riku Saikkonen for the suggestion (Closes: #487951).
   * Great debian/rules cleanup:
     + Remove dir target, no longer used.
+    + Stop removing rules/compat/base.l[2-4]*.part, they are no longer
+      generated automatically.
 
  -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
 

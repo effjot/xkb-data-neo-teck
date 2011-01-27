@@ -52,7 +52,7 @@ clean: xsfclean
 	dh_clean
 	rm -f compat/compat.dir geometry/geometry.dir keycodes/keycodes.dir
 	rm -f keymap/keymap.dir symbols/symbols.dir types/types.dir rules/base
-	rm -f rules/compat/base.l[2-4]*.part rules/compat/base.m*.part
+	rm -f rules/compat/base.m*.part
 
 deb:
 	dpkg-buildpackage -rfakeroot -i'/\.git|/\.svn'
