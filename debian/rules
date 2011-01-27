@@ -25,7 +25,7 @@ config.status: configure
 	dh_testdir
 	./configure $(confflags) \
 	  --prefix=/usr \
-	  --disable-xkbcomp-symlink --with-xkb-rules-symlink=xfree86,xorg \
+	  --with-xkb-rules-symlink=xfree86,xorg \
 	  --with-xkb-base=$(xkb_base)
 	>$@
 
