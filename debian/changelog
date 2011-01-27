@@ -25,6 +25,7 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
     + Also don't ship the newly-added pkg-config file in the udeb.
     + Stop removing $(xkb_base)/compiled, it's no longer created.
     + Stop passing --disable-xkbcomp-symlink to configure, it's gone.
+  * Merge xsfbs/debian-unstable, which helps avoiding rebuilds.
 
  -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
 
