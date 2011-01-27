@@ -1,4 +1,4 @@
-xkeyboard-config (2.1-1) UNRELEASED; urgency=low
+xkeyboard-config (2.1-1) experimental; urgency=low
 
   * New upstream release:
     + Beware of the possible regressions, we're going 3 releases forward
@@ -29,7 +29,7 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
   * Merge xsfbs/debian-unstable, which helps avoiding rebuilds.
   * Update download URL in watch file.
 
- -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 28 Jan 2011 00:11:58 +0100
 
 xkeyboard-config (1.8-2) unstable; urgency=low
 
