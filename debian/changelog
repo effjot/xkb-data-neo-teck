@@ -1,9 +1,12 @@
-xkeyboard-config (1.8-3) UNRELEASED; urgency=low
+xkeyboard-config (2.1-1) UNRELEASED; urgency=low
 
+  * New upstream release:
+    + Beware of the possible regressions, we're going 3 releases forward
+      at once.
   * Point to /usr/share/X11/xkb/rules/base.lst in README.Debian, thanks to
     Riku Saikkonen for the suggestion (Closes: #487951).
 
- -- Cyril Brulebois <kibi@debian.org>  Sat, 15 Jan 2011 02:13:18 +0100
+ -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
 
 xkeyboard-config (1.8-2) unstable; urgency=low
 
