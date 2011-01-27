@@ -3,6 +3,9 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
   * New upstream release:
     + Beware of the possible regressions, we're going 3 releases forward
       at once.
+  * Rebuild ChangeLog using “git log” on the upstream branch. The NEWS
+    file is a bit too lightweight. As a reminder, it's installed as:
+      /usr/share/doc/xkb-data/changelog.gz
   * Point to /usr/share/X11/xkb/rules/base.lst in README.Debian, thanks to
     Riku Saikkonen for the suggestion (Closes: #487951).
 
