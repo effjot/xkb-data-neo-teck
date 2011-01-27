@@ -8,6 +8,8 @@ xkeyboard-config (2.1-1) UNRELEASED; urgency=low
       /usr/share/doc/xkb-data/changelog.gz
   * Point to /usr/share/X11/xkb/rules/base.lst in README.Debian, thanks to
     Riku Saikkonen for the suggestion (Closes: #487951).
+  * Great debian/rules cleanup:
+    + Remove dir target, no longer used.
 
  -- Cyril Brulebois <kibi@debian.org>  Thu, 27 Jan 2011 19:56:52 +0100
 
