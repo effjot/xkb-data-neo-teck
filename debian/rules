@@ -63,8 +63,6 @@ install: build
 	dh_installdirs
 
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xkb-data
-	#  Remove this symlink, it is no more needed
-	rm -f $(CURDIR)/debian/xkb-data/$(xkb_base)/compiled
 
 	# Treat the udeb as an exact copy, but remove messages/pkg-config:
 	cp -r $(CURDIR)/debian/xkb-data/* $(CURDIR)/debian/xkb-data-udeb
