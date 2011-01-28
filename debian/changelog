@@ -1,3 +1,9 @@
+xkeyboard-config (2.1-2) UNRELEASED; urgency=low
+
+  * Remove Mohammed Adnène Trojette from Uploaders. Thanks for your work!
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 28 Jan 2011 03:11:08 +0100
+
 xkeyboard-config (2.1-1) experimental; urgency=low
 
   * New upstream release:
