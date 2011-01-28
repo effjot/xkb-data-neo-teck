@@ -2,6 +2,7 @@ xkeyboard-config (2.1-2) UNRELEASED; urgency=low
 
   * Remove Mohammed Adnène Trojette from Uploaders. Thanks for your work!
   * Wrap build dependencies.
+  * Drop Breaks on libx11-6 (<< 2:1.1), that was before lenny.
 
  -- Cyril Brulebois <kibi@debian.org>  Fri, 28 Jan 2011 03:11:08 +0100
 
