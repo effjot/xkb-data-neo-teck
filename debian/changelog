@@ -1,3 +1,10 @@
+xkeyboard-config (2.2.1-1) UNRELEASED; urgency=low
+
+  * New upstream release:
+    - Big rewrite for GNOME3.
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 06 Apr 2011 01:08:57 +0200
+
 xkeyboard-config (2.1-2) unstable; urgency=low
 
   * Remove Mohammed Adnène Trojette from Uploaders. Thanks for your work!

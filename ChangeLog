@@ -1,3 +1,575 @@
+commit 579842f5eb2ffbc902bd332fca84878621640270
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Apr 5 23:43:24 2011 +0100
+
+    Preparing 2.2.1
+
+commit 670e6967ab1c41d2fb0bed2d5b7092d5b2ed42a1
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Apr 5 23:26:14 2011 +0100
+
+    bashism eliminated
+    (cherry picked from commit 4e2cb01ad0ef957a18d684ba225d672d1b6a3bb8)
+
+commit 764f32e0d779fcb7c367b442db76e515006d6a30
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Apr 5 23:24:34 2011 +0100
+
+    Fixed runtime deps checking
+    
+    The condition was missing
+    (cherry picked from commit 161cb4ffe01ea2bf8d94a4c3f5e21dc279dacf00)
+
+commit ee0654f28bfdbdc5fed3a0477c1d58a55d85127f
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Apr 3 21:09:02 2011 +0100
+
+    Translations updated for 2.2
+
+commit 8b54d61efbd0971eeee808c38e3546cdd71e9f38
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Apr 3 20:43:24 2011 +0100
+
+    Preparing 2.2
+
+commit b0970d518b59b69ffe2f4dda677727765fa9718a
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Mar 27 00:39:19 2011 +0000
+
+    Major change in Burmese layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35642
+
+commit 46695b35580b7b3ca731d7256d9b156d55d75c7d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Mar 25 20:02:03 2011 +0000
+
+    Preparing 2.1.99
+
+commit 934c5e91e0e0c46703d6f4bb9bbc4619d7bbab8b
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 06:10:28 2011 -0400
+
+    Improve descriptions (the rest)
+    
+    WHEW!
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 18f19cf0037e6cc70da109c5f0d8cd56804417bc
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 06:17:43 2011 -0400
+
+    Improve descriptions (taiwan)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 58e8aa199d9baa0f734a33e7c8c4228a0ef4f9d7
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 05:57:17 2011 -0400
+
+    Improve descriptions (through Nigeria)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit ef59514ffacdb2be369d45ea9c9832570548b1a4
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 05:00:50 2011 -0400
+
+    Improve descriptions (afghani)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 9a21ade574d0820e95ea79ebd4dfb0975b05e4c5
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 04:59:42 2011 -0400
+
+    Improve descriptions (to i)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit fbb5c79f73673051c1fc3e686dc46a88241af05b
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 04:22:10 2011 -0400
+
+    Improve descriptions more (a-belarusian)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 7b71b954d97fff3dda6e24860f9b85cacad6295c
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 04:04:22 2011 -0400
+
+    Improve descriptions (afghanistan)
+    
+    Not sure what to do with the main afghanistan layout
+    since it doesn't really map to a language.
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit f29a596e450a17c0b9515907e9e7113eea7ca330
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:41:00 2011 -0400
+
+    Improve descriptions (ku, tr)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 33ec02faaa943c496abaff37637b15902b177787
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:27:50 2011 -0400
+
+    Improve descriptions (indian)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 1000cc2c1fd39a2505cf6dd7be1e484c56c90faa
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:14:28 2011 -0400
+
+    Improve descriptions (ka)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 4a306e3409f0f361c90cf84fe8a775104308c3bb
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:11:59 2011 -0400
+
+    Improve descriptions (hu)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 153bfa3c15861404d9fd0f4fcae029cba2a73f92
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:08:28 2011 -0400
+
+    Improve descriptions (pl)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 11d31f8a5f08c9c1119900a6675499ff0a4a5bea
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:06:44 2011 -0400
+
+    Improve descriptions (ro)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 192912e5fb3fca972698b5ced455ad45ce1d31c8
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:04:13 2011 -0400
+
+    Improve descriptions (pt)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 4ba4f1b78cdb73b4c1ee6cf712b2bb49b464b247
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 03:01:48 2011 -0400
+
+    Improve descriptions (ar)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit db82b4cb6c8e2ed4cb48f7c709f2e64807bf3c5d
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:58:45 2011 -0400
+
+    Improve descriptions (it)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit fa325f45d076bedc295fb92ea702fc855c8556e7
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:56:50 2011 -0400
+
+    Improve descriptions (ja)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit e7ddd4f6f9067f511ba63940042e25c0f4ebd561
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:53:37 2011 -0400
+
+    Improve descriptions (zh)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit e92c5274584711c9e05ebed4509e7efe49424cab
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:49:36 2011 -0400
+
+    Improve descriptions (ie)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 8b365a7887c96bae50ec529b00d3829bcc5e4a61
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:37:30 2011 -0400
+
+    Improve descriptions (ru)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit d15d44e0144c64ba7876f3c573919913586611f2
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:26:03 2011 -0400
+
+    Improve descriptions (gr)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit e54a1ac2ecd3824ba19e98018ff83ac37f4df0c3
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:24:12 2011 -0400
+
+    Improve descriptions (es)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 28f8506f7eb533e486c46afc74b4b26dbeae748c
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:21:17 2011 -0400
+
+    Improve descriptions (de)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit f7e3c7993d64cb42ea96c00372c50bf203e1c35f
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:17:35 2011 -0400
+
+    Improve descriptions (uk)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit e487c845af8cbae4270c95092549a1f87d1fe511
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 02:13:32 2011 -0400
+
+    Improve descriptions (fr)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit ae97655feb271e40579c645338380fccadd68eaa
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Fri Mar 25 00:00:03 2011 -0400
+
+    Improve descriptions (Canadian)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 2fe6ff02d0938b69906dcab40387e5f51ae81e35
+Author: William Jon McCann <jmccann@redhat.com>
+Date:   Thu Mar 24 23:33:50 2011 -0400
+
+    Improve descriptions (us set)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35653
+
+commit 9bcb51339b5770263dc724d41ab98ad463eaaf9c
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Fri Mar 25 08:41:54 2011 +1000
+
+    configure: enable run-time-dependencies as build-time dependencies
+    
+    With the recent addition of Sinhala keysyms, xkeyboard-config has a run-time
+    dependency on certain xproto/libX11 versions. The build will work anyway,
+    but using those layouts may result in unusable keyboards.
+    
+    Enable these run-time dependencies as build-time dependencies so that those
+    building on their local machines are warned that the resulting build may not
+    work. Those building on build hosts (e.g. distros) can skip this check with
+    --disable-runtime-deps.
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
+commit 35e4b027373925be6ed5a99fb19eef46c6ca76d6
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Mar 24 00:30:56 2011 +0000
+
+    Updated lk layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35530
+
+commit a2a4925b6d7331e7fa2cbd2d563d4f0d5cdca131
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Mar 22 21:15:46 2011 +0000
+
+    Added lv(dvorak), fixed some descriptions
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=34935
+
+commit e9765414a3a7c279c7bd0de63efdca2c6e3bb0a0
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Mar 22 21:15:30 2011 +0000
+
+    A bit of polish in descriptions
+
+commit 848211da9a6e1cb2dc8471ca7694f1c72ca2b644
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Mar 22 21:13:18 2011 +0000
+
+    Syncing descriptions
+
+commit 0a247a4cdd3b138c73c34b1aed4f423ec2e1fe75
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Mar 22 20:52:01 2011 +0000
+
+    Fixed nbsp behavior in lk(zwnj2nb3s)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35533
+
+commit 2723f9bf7e8376a7b5372c088f859b8d9e30c6e7
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Mar 19 20:02:12 2011 +0000
+
+    Updated Congolese layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=2693
+
+commit 51994a1d1849914e81e0e335da257d7cdbaf2cc6
+Author: Richard Hartmann <richih.mailinglist@gmail.com>
+Date:   Sun Mar 13 19:06:52 2011 +0100
+
+    Add keycodes for MS Natural KB 4000 keys 1-5 to evdev
+
+commit bffae7ce7c1ea6d8d5120d0608eb98832c617602
+Author: Richard Hartmann <richih.mailinglist@gmail.com>
+Date:   Sun Mar 13 15:37:29 2011 +0100
+
+    Fix stupid copy & paste error
+    
+    Ugh, sorry.
+
+commit 8cf05a57c4bf59f08cf7a0a7690b3ea9af520653
+Author: Richard Hartmann <richih.mailinglist@gmail.com>
+Date:   Sun Feb 27 13:36:51 2011 +0100
+
+    Added keycodes for Microsoft Natural Keyboard 4000
+    
+    Notably absent are any and all changes to the .po files as there _has_
+    to be a way not to do them by hand... Unfortunately, I was unable to
+    find it.
+
+commit 0d1f4a895608b5977e5897e07cbd9f9adf7a7cf5
+Author: Richard Hartmann <richih.mailinglist@gmail.com>
+Date:   Sun Feb 27 13:36:51 2011 +0100
+
+    Added keycodes for Microsoft Natural Keyboard 4000
+    
+    Notably absent are any and all changes to the .po files as there _has_
+    to be a way not to do them by hand... Unfortunately, I was unable to
+    find it.
+
+commit 9333b2f3f0e3f1724b7a5c04b8ffc5eafb96fefa
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Mar 7 20:48:03 2011 +0000
+
+    added in(mal_enhanced)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35059
+
+commit f75876f2115b6a4dd03b534c38e6d2b29ae44e1f
+Author: Bryce Harrington <bryce@canonical.com>
+Date:   Fri Mar 4 12:38:19 2011 -0800
+
+    Add tw file
+    
+    Signed-off-by: Bryce Harrington <bryce@canonical.com>
+
+commit 366e5015e2b1844aef6d566109d82cd40c91ec6f
+Author: Bryce Harrington <bryce@canonical.com>
+Date:   Wed Feb 16 11:14:40 2011 -0800
+
+    Add layout for Taiwan keyboards.
+    
+    Patch originally by Arne Goetje, carried in Ubuntu since 2010.
+    
+    Bug: #34354
+    
+    Signed-off-by: Bryce Harrington <bryce@canonical.com>
+
+commit 47ed63a48e55d48f7ae7bb83b9a687cb9aed237e
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Mar 3 20:58:02 2011 +0000
+
+    added exotic ro(ergonomic)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=34576
+
+commit f836c210a4e4007715b149d4736a447c56b7cbaa
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Mar 2 23:56:25 2011 +0000
+
+    The extra symbols are merged back into the base files
+    
+    The rules are not powerful enough to support the extras subdir.
+    So the variants are merged into "main" files.
+    From now on, the "extra" term only affects the directory: whether
+    the record is in base.xml.in or base.extras.xml.in
+
+commit f4958b82e1f734abb1339e5d59226211c803129d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Mar 2 21:35:28 2011 +0000
+
+    a bit of inconsistency in the group name
+
+commit 1d9cfa2cdd6a4d4df1ac468ef1532815c7c0e2c2
+Author: Martin Langhoff <martin@laptop.org>
+Date:   Thu Feb 24 05:31:38 2011 +0000
+
+    es patch from xkeyboard-config-1.3-8.olpc3.src.rpm
+
+commit 83ab49c278d4b3efc67fe6bf2ec5d9b8c1e6dc99
+Author: Paul Fox <pgf@laptop.org>
+Date:   Fri Jul 16 21:15:07 2010 +0000
+
+    add support for missing "section" glyph on rbracket/rbrace key on spanish olpc keyboard
+
+commit 0fc75ed1e1a3d11eadfcf4b608c938219f3a7dbf
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Mar 2 00:28:31 2011 +0000
+
+    xml:lang is removed - valid reason to bump the version number
+
+commit 156272d8ea863a0bdb2026ed5334f63927ce590c
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Mar 2 00:21:49 2011 +0000
+
+    Since we do not merge translations: simplify some things
+    
+    DTD and perl script (converter to lst) should not have xml:lang
+
+commit c19d73dbd9a0af721bce6f8c6dd3b4be910a08cc
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Mar 1 23:41:05 2011 +0000
+
+    Bumped the version
+    
+    Additionally, small structural error fixed
+
+commit fed2196bd652d58264a67fe3586c041fa2aa8ff5
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Mar 1 11:27:31 2011 +0000
+
+    BIG CHANGE: variants now contain full descriptions
+    
+    There is no need to prepend the layout description to the variant name.
+    That allows breaking "%s %s" pattern that is not the best solution for some
+    variants.
+    
+    The code using base.xml for user-visible strings should be updated accordingly
+
+commit 43b56494bed2e67a2a26266850cb9e0b28a056c0
+Author: Stephan Hilb <stephan@ecshi.net>
+Date:   Sat Feb 19 14:06:28 2011 +0100
+
+    Add option to bind Control modifier to <CAPS> key while preserving the Caps_Lock keysym
+    
+    Allows the <CAPS> key to act as a Control modifier while still being recognized as the caps lock key through its keysym (CapsLock).
+    See #30898 for usecases and arguments.
+
+commit dce17bac18240f628cd27fae2de3161790247a0a
+Author: Martin Langhoff <martin@laptop.org>
+Date:   Thu Feb 24 05:33:39 2011 +0000
+
+    np patch rebased, reworked from xkeyboard-config-1.3-8.olpc3.src.rpm
+
+commit 9f3b514b9ac0d2b74394b09528e671092c1c9088
+Author: Martin Langhoff <martin@laptop.org>
+Date:   Thu Feb 24 05:33:19 2011 +0000
+
+    mn patch from xkeyboard-config-1.3-8.olpc3.src.rpm
+
+commit c28367a15a29b100ca54f69b9643dcf6175912e6
+Author: Martin Langhoff <martin@laptop.org>
+Date:   Thu Feb 24 05:32:16 2011 +0000
+
+    et patch rebased, reworked from xkeyboard-config-1.3-8.olpc3.src.rpm
+
+commit dd07ae9e787e9be1ded2116124403eec4cee13c7
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Feb 25 23:10:08 2011 +0000
+
+    missing part of the prev OLPC patch
+
+commit 5ed4c9f3d4061d1ed1361a07957ff86532fa4df7
+Author: Martin Langhoff <martin@laptop.org>
+Date:   Thu Feb 24 05:29:51 2011 +0000
+
+    af patch from xkeyboard-config-1.3-8.olpc3.src.rpm
+
+commit aca72ef63bd88c1f3770b1cae272f0906ae9c5a4
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Feb 24 23:22:57 2011 +0000
+
+    Redundant line
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=34654
+
+commit baa0f4423d20b95904da94d053b730b40d835284
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Feb 21 17:26:49 2011 +0000
+
+    Some descriptions were untranslatable, fixed
+    
+    Added underscores
+
+commit f09ba962998fd439013d99eeb8fc5c08aac04efe
+Author: Alexandr Shadchin <Alexandr.Shadchin@gmail.com>
+Date:   Sun Feb 20 23:17:14 2011 +0500
+
+    Removed dupes (base.ml_s.part)
+    
+    Signed-off-by: Alexandr Shadchin <Alexandr.Shadchin@gmail.com>
+
+commit d15465ddb6e92263bcd182d81845adbe00e9bd2c
+Author: Alexandr Shadchin <Alexandr.Shadchin@gmail.com>
+Date:   Sun Feb 13 23:54:08 2011 +0500
+
+    Remove RCS tags
+    
+    Signed-off-by: Alexandr Shadchin <Alexandr.Shadchin@gmail.com>
+
+commit 1c3532c0d7b20fcced94a24f16bae482812eff87
+Author: Bryce Harrington <bryce@canonical.com>
+Date:   Wed Feb 16 11:10:57 2011 -0800
+
+    Improved support for Lao keymap
+    
+    Adds two new characters to the Lao keyboard layout, in the shift-O and
+    shift-, positions.
+    
+    Bug: #34353
+    Ref.: https://bugs.launchpad.net/ubuntu/+bug/341741
+    
+    Signed-off-by: Bryce Harrington <bryce@canonical.com>
+
+commit 2df25f058048d381e6e1c71eca6097a8bee74feb
+Author: Bryce Harrington <bryce@canonical.com>
+Date:   Wed Feb 16 10:27:38 2011 -0800
+
+    Add keycode definitions required for Apples Expose & Dashboard keys (F3/F4)
+    
+    Apple's Expose and Dashboard keys (F3 and F4) have correct keycodes
+    reported by evdev, but are not mapped.  This adds the required keycodes
+    and symbols, using the symbols XF86LaunchA and XF86LaunchB, which allows
+    the keys to be used in compiz configuration.
+    
+    (This patch has been included in Ubuntu since 2010.)
+    
+    Bug: #34351
+    Ref.: https://bugs.launchpad.net/ubuntu/+bug/520519
+    
+    Signed-off-by: Bryce Harrington <bryce@canonical.com>
+
+commit d6e26092800736873c88dbb19ea70746d5f1e217
+Author: Van de Bugger <van.de.bugger@gmail.com>
+Date:   Thu Feb 10 01:26:30 2011 +0300
+
+    One more layout switcher: LeftCtrl+LeftWin/RightCtrl+Menu
+
 commit 1b045f02e0fa84f1c469254414bed64005de51ec
 Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Tue Jan 25 20:51:48 2011 +0000
