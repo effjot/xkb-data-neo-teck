@@ -19,6 +19,7 @@ Homepage: http://www.freedesktop.org/Software/XKeyboardConfig
 
 Package: xkb-data
 Depends: ${misc:Depends}
+Breaks: libx11-6 (<< 2:1.4.3)
 Architecture: all
 Description: X Keyboard Extension (XKB) configuration data
  This package contains configuration data used by the X Keyboard

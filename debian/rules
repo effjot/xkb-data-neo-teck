@@ -26,7 +26,8 @@ config.status: configure
 	./configure $(confflags) \
 	  --prefix=/usr \
 	  --with-xkb-rules-symlink=xfree86,xorg \
-	  --with-xkb-base=$(xkb_base)
+	  --with-xkb-base=$(xkb_base) \
+	  --disable-runtime-deps
 	>$@
 
 build: $(STAMP_DIR)/build

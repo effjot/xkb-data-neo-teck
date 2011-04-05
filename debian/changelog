@@ -2,6 +2,10 @@ xkeyboard-config (2.2.1-1) UNRELEASED; urgency=low
 
   * New upstream release:
     - Big rewrite for GNOME3.
+  * By default, run-time dependencies are checked at build-time:
+    - Pass --disable-runtime-deps to disable that check since there's no
+      point in doing so for Debian packages.
+    - Break earlier versions of libx11-6.
 
  -- Cyril Brulebois <kibi@debian.org>  Wed, 06 Apr 2011 01:08:57 +0200
 
