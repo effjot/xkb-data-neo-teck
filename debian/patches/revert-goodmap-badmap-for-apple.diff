@@ -22,7 +22,7 @@ diff --git a/keycodes/macintosh b/keycodes/macintosh
 index d41ac4b..d1e0be8 100644
 --- a/keycodes/macintosh
 +++ b/keycodes/macintosh
-@@ -38,6 +38,16 @@ default xkb_keycodes "macintosh" {
+@@ -36,6 +36,16 @@ default xkb_keycodes "macintosh" {
     
  };
  
@@ -43,8 +43,8 @@ diff --git a/rules/base.m_k.part b/rules/base.m_k.part
 index dd0c391..794994c 100644
 --- a/rules/base.m_k.part
 +++ b/rules/base.m_k.part
-@@ -10,6 +10,7 @@
-   olpc		=	evdev
+@@ -9,6 +9,7 @@
+  $applealu	=	macintosh(alukbd)
    macintosh_hhk	=	macintosh(hhk)
    macintosh_old	=	macintosh(old)
 + $macbooks	=	macintosh+macintosh(goodmap)
