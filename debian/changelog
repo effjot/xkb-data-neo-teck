@@ -6,6 +6,8 @@ xkeyboard-config (2.2.1-1) UNRELEASED; urgency=low
     - Pass --disable-runtime-deps to disable that check since there's no
       point in doing so for Debian packages.
     - Break earlier versions of libx11-6.
+  * Get rid of old maintainer scripts to upgrade from 1.6 since squeeze
+    has 1.8.
 
  -- Cyril Brulebois <kibi@debian.org>  Wed, 06 Apr 2011 01:08:57 +0200
 
