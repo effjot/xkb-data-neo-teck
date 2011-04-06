@@ -14,6 +14,7 @@ xkeyboard-config (2.2.1-1) UNRELEASED; urgency=low
     - Use dh-autoreconf.
     - Rewrite debian/rules accordingly.
   * Remove debian/xsfbs/, no longer needed.
+  * Remove debian/patches/quiltrc, not really needed.
 
  -- Cyril Brulebois <kibi@debian.org>  Wed, 06 Apr 2011 01:08:57 +0200
 
