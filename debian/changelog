@@ -13,6 +13,7 @@ xkeyboard-config (2.2.1-1) UNRELEASED; urgency=low
     - Bump debhelper build-dep/compat to 8.
     - Use dh-autoreconf.
     - Rewrite debian/rules accordingly.
+    - Build out-of-tree.
   * Remove debian/xsfbs/, no longer needed.
   * Remove debian/patches/quiltrc, not really needed.
 
