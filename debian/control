@@ -4,13 +4,12 @@ Priority: extra
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Uploaders: Cyril Brulebois <kibi@debian.org>
 Build-Depends:
- debhelper (>= 7.0.0),
+ debhelper (>= 8),
+ dh-autoreconf,
  quilt,
 Build-Depends-Indep:
  libxml-parser-perl,
  x11-xkb-utils,
- automake,
- intltool,
  libglib2.0-dev,
 Standards-Version: 3.9.1
 Vcs-Git: git://git.debian.org/git/pkg-xorg/data/xkb-data

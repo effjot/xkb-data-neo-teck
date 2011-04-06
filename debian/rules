@@ -1,66 +1,19 @@
 #!/usr/bin/make -f
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
-
-include debian/xsfbs/xsfbs.mk
-
-export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-
-# FOR AUTOCONF 2.52 AND NEWER ONLY
-ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
-	confflags += --build $(DEB_HOST_GNU_TYPE)
-else
-	confflags += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
-endif
-
 xkb_base := /usr/share/X11/xkb
 
-configure: $(STAMP_DIR)/patch
-	intltoolize -c -f
-	autoreconf -vfi
+override_dh_autoreconf:
+	dh_autoreconf -- '(intltoolize -c -f && autoreconf -vfi)'
 
-config.status: configure
-	dh_testdir
-	./configure $(confflags) \
-	  --prefix=/usr \
+override_dh_auto_configure:
+	dh_auto_configure -- \
 	  --with-xkb-rules-symlink=xfree86,xorg \
 	  --with-xkb-base=$(xkb_base) \
 	  --disable-runtime-deps
-	>$@
 
-build: $(STAMP_DIR)/build
-$(STAMP_DIR)/build: config.status
-	dh_testdir
-	$(MAKE)
-	>$@
-
-clean: xsfclean
-	dh_testdir
-	dh_testroot
-	[ ! -f Makefile ] || $(MAKE) maintainer-clean
-	rm -rf $$(find -name Makefile.in)
-	rm -f aclocal.m4 configure install-sh intltool-*.in
-	rm -f missing po/Makefile.in.in
-	rm -f semantics/semantics.dir
-	rm -f rules/evdev rules/evdev.xml.in
-
-	# Files not cleaned up
-	-rm -f intltool-extract intltool-merge intltool-update
-	-rm -f rules/base.xml
-	-rm -f po/.intltool-merge-cache config.status.lineno
-	dh_clean
-	# Work around quilt's removing empty files:
-	touch rules/base.o_k.part
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep
-	dh_installdirs
-
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/xkb-data
+override_dh_auto_install:
+	# Regular deb:
+	$(MAKE) -C build install DESTDIR=$(CURDIR)/debian/xkb-data
 
 	# Treat the udeb as an exact copy, but remove messages/pkg-config:
 	cp -r $(CURDIR)/debian/xkb-data/* $(CURDIR)/debian/xkb-data-udeb
@@ -74,22 +27,10 @@ install: build
 	find $(CURDIR)/debian/xkb-data-udeb/usr/share/X11 -type f -print0 \
 	  | xargs -0 perl -i -pe 's/[ \t]+/ /g'
 
-# Build architecture-dependent files here.
-binary-arch: build install
-# We have nothing to do by default.
+# Work around quilt's removing empty files:
+override_dh_quilt_unpatch:
+	dh_quilt_unpatch
+	touch rules/base.o_k.part
 
-# Build architecture-independent files here.
-binary-indep: build install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs ChangeLog
-	dh_installdocs
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install 
+%:
+	dh $@ --with quilt,autoreconf --builddirectory=build/

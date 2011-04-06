@@ -9,6 +9,10 @@ xkeyboard-config (2.2.1-1) UNRELEASED; urgency=low
   * Get rid of old maintainer scripts to upgrade from 1.6 since squeeze
     has 1.8.
   * Refresh patches.
+  * Switch to dh:
+    - Bump debhelper build-dep/compat to 8.
+    - Use dh-autoreconf.
+    - Rewrite debian/rules accordingly.
 
  -- Cyril Brulebois <kibi@debian.org>  Wed, 06 Apr 2011 01:08:57 +0200
 
