@@ -1,24 +1,357 @@
-commit 579842f5eb2ffbc902bd332fca84878621640270
+commit 0012006e23556fcc565a6ce2d7d265c28d876bff
 Author: Sergey V. Udaltsov <svu@gnome.org>
-Date:   Tue Apr 5 23:43:24 2011 +0100
+Date:   Tue May 31 20:15:03 2011 +0100
 
-    Preparing 2.2.1
+    Preparing 2.3
 
-commit 670e6967ab1c41d2fb0bed2d5b7092d5b2ed42a1
+commit 0631d0ab16a89f2da8fcbbd8d8b77a3b39bdd998
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 31 20:12:23 2011 +0100
+
+    Added localisation 'ja'
+
+commit d9338c0018a05b50bab8d8b70ee0a61e74c32ac3
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 31 20:11:28 2011 +0100
+
+    Updated translations from TP
+    
+    Including https://bugs.freedesktop.org/show_bug.cgi?id=37565
+
+commit c89b61e2bf48fefd1b19ce55b4fd97428e61a415
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri May 27 21:30:02 2011 +0100
+
+    Moved ro(crh_dobruja) to extras
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=23544
+
+commit 88a087588973ef6bdbf358b5e37230168d4acbcd
+Author: Stefan Dirsch <sndirsch@suse.de>
+Date:   Tue May 24 16:54:28 2011 +0200
+
+    Move fake key MDSW to a different keycode value in xfree86 table.
+    
+    According to symbols/inet this keycode is used by two keyboard models:
+    logitech_g15 and apple.
+    Thus it should not be used for a fake keycode that gets assigned to a
+    virtual modifier.
+    
+    Signed-off-by: Egbert Eich <eich@freedesktop.org>
+
+commit e5eb6f50085f6f7f836d65a828a7ecea715c0c7c
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed May 18 22:25:05 2011 +0100
+
+    Small fix
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=37202
+
+commit 5cb182660bfce115d1218747e3810088757e4fd9
+Author: Vasyĺ V. Vercynśkyj <fuckel@ukr.net>
+Date:   Tue May 17 09:19:05 2011 +0300
+
+    added ru(ruu) to extras
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=30658
+
+commit 55ea2758d471148968a021af20c0136b03f28c92
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 17 21:50:29 2011 +0100
+
+    Actually it is olpc-phonetic that had to be added
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=37272
+
+commit 2e50b67355f3eb62a72702e5e7444c6d75f6547e
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 17 21:13:14 2011 +0100
+
+    changed the version
+    
+    ... and updated POT
+
+commit a445a4262864a480b8447e831962d735bd5b4992
+Author: Vasyĺ V. Vercynśkyj <fuckel@ukr.net>
+Date:   Tue May 17 09:19:05 2011 +0300
+
+    added ru(ruu) to extras
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=30658
+
+commit 1ea786cdefbeb7a196a02a75375766a16aa17a42
+Author: Walter Bender <walter.bender@gmail.com>
+Date:   Tue May 17 09:11:08 2011 -0400
+
+    adding olpc-phonetic variant to Armenian
+
+commit 2b17c788a5389d42e12b9264232a4255bfcd3e5b
+Author: Walter Bender <walter.bender@gmail.com>
+Date:   Mon May 16 17:16:01 2011 -0400
+
+    adding olpc-phonetic layout
+
+commit 8defa21bb7f6f5b571ddc6df2d54d305c0e5d6d8
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon May 16 22:04:15 2011 +0100
+
+    Dropped unneeded lt(dvorak)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=34935
+
+commit c6481860b9d8f59d239184c14cfe0e825b1d5103
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon May 16 22:02:57 2011 +0100
+
+    Added lt(us_dvorak) into extras
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=34935
+
+commit 7e5a73ef9f4b11356ddeefc6185bafede053eb1d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon May 16 21:37:41 2011 +0100
+
+    Fixed some short descriptions
+
+commit d5b9fbf1faf513c6c493f424066ff3a6b6d3033f
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun May 15 21:42:13 2011 +0100
+
+    Added Cameroon materials
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=37202
+
+commit 03c2c0d2ca83f6f09c01295cb31413e1e3b2272f
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun May 15 21:41:38 2011 +0100
+
+    one more temp file to be ignored
+
+commit 3aa08ed3eca9503435fceec92ad48e100ad92a57
+Author: Marcin Woliński <wolinski@ipipan.waw.pl>
+Date:   Fri May 13 17:06:50 2011 +0200
+
+    Polish international with dead keys
+    
+    A Polish layout variant with a comprehensive set of quotes, dashes, and dead accents
+    See http://marcinwolinski.pl/keyboard/ for a description.
+
+commit 2eeac28860caae4d7ca319503dfb0ac0ed19778c
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 3 00:34:17 2011 +0100
+
+    Missing variants for nokia n900
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=36739
+
+commit 9b8a4477f7c719f50d7fec41aa45d2ee6c2782dc
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 3 00:28:10 2011 +0100
+
+    syncing descriptions for me unicode variants
+    
+    "Unicode" always starts in uppercase
+
+commit 52b7c05561d1d8b1e9b46c05aa1a0257b4d2ad24
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue May 3 00:27:01 2011 +0100
+
+    added se(swl)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=36369
+
+commit a51a81db40a6012d27ff33c1497fa0c07e6d33d7
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Apr 29 08:07:01 2011 +0100
+
+    improved comments for lt(lekp)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=14096
+
+commit 9997298d6294c181a967b5c6e7dff358872cb8f7
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Apr 28 22:03:58 2011 +0100
+
+    Sorting out the licensing issue for lt(lekp) and lt(lekpa)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=14096
+
+commit 10a98989359b94c6d7dd787df80a3d5e12bc3d64
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Apr 27 22:50:08 2011 +0100
+
+    unicode -> Unicode in descriptions
+    
+    Spotted by Jorge González
+
+commit 72355c66e34becfd45208cd32983f098e243bec1
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Apr 27 22:11:55 2011 +0100
+
+    Removed licensing nonsense
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=15407
+
+commit 3193b434c469ccfedbdd1b4fb12d550b24c4a858
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Apr 17 11:29:35 2011 +0100
+
+    Slightly improved algorighm
+    
+    Consider olpc/htcdream models, use extras
+
+commit 0f0b531787de7253c4fc635bbff5a97b205e7cdf
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Apr 17 11:29:15 2011 +0100
+
+    A bit more sync in descriptions (for olpc)
+
+commit a71996de1e6f14c44f2930359ce6dae779c72854
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Apr 17 11:16:09 2011 +0100
+
+    Sync descriptions in lv extras
+
+commit 19a0026b5a8bd01cfc21bc8c7342e1c4f4567161
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Apr 15 00:42:55 2011 +0100
+
+    Moving ca(shs) into extras
+    
+    There are only 1650 speakers
+    http://en.wikipedia.org/wiki/Shuswap_language
+
+commit ec1f5af5d16ef9ccbb23b74cbe82f11b311d7293
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Apr 15 00:36:36 2011 +0100
+
+    Moving ca(kut) to extras
+    
+    There are only 12 speakers, as of 1999
+    http://en.wikipedia.org/wiki/Kutenai_language
+
+commit 8670a90aed89941399aba28c3aeeab6c1e21a276
+Author: Aldis Berjoza <aldis@bsdroot.lv>
+Date:   Thu Apr 14 23:26:57 2011 +0300
+
+    Update Latvian Modern layout to latest version
+    
+    * This Latvian Modern update fixes one flaw related to pipe character,
+    which now can be accesses with AltGr + m (Latvian Moder layout).
+    * This is most important to SH programmers.
+    * Other layout changes are minnor.
+    * Remove tailing whitespace
+
+commit 4c4fa09854f54b2d384a527ab0868a2ad04acec1
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Apr 13 21:47:35 2011 +0100
+
+    Broken compat mapping removed
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=36191
+
+commit 94960d300cd669cc1b856c76dfbfccf7903f4b8e
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Apr 13 21:42:31 2011 +0100
+
+    Rolling back wrong mapping of AB09 in hu
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=28091
+
+commit 8cbaa231545ae269351f86c8a663546eb0be323c
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Apr 12 21:58:31 2011 +0100
+
+    Fixed Saami back to Northern Saami
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35752
+
+commit ff23484a6cd9318b616cbac40469c17e50ef84b2
+Author: Aldis Berjoza <aldis@bsdroot.lv>
+Date:   Tue Apr 12 03:23:20 2011 +0300
+
+    Added new Latvian keyboard layouts
+    
+    And Latvian Modernd layouts (invented and created by Valdis Vītoliņš)*
+    Add Latvian (ŪGJRMV) Ergonomic (created by Valdis Vītoliņš)*
+    Add Latvian Latvian Adapted (invented and created by Valdis Vītoliņš)*
+    Add US-Dvorac compatible Latvian layouts
+    Add programmer US-Dvorac compatible Latvian layouts
+    Add US-Colemak compatible Latvian layouts
+    
+    *) Reference: http://odo.lv/LatvianKeyboard
+
+commit 110b4ffa4fac8c74608af79bea7010df3721a572
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Apr 9 02:08:51 2011 +0100
+
+    Sync group names with layout names
+
+commit e144b5acfe939f01d7c0d249ebfddca5f3bad32b
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Apr 9 02:07:03 2011 +0100
+
+    Fixed some descriptions
+
+commit b823a3861b88c19389a0e5edba947cc7ce3d8571
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Apr 6 21:16:03 2011 +0100
+
+    Missing bracket restored
+
+commit 4e2cb01ad0ef957a18d684ba225d672d1b6a3bb8
 Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Tue Apr 5 23:26:14 2011 +0100
 
     bashism eliminated
-    (cherry picked from commit 4e2cb01ad0ef957a18d684ba225d672d1b6a3bb8)
 
-commit 764f32e0d779fcb7c367b442db76e515006d6a30
+commit 161cb4ffe01ea2bf8d94a4c3f5e21dc279dacf00
 Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Tue Apr 5 23:24:34 2011 +0100
 
     Fixed runtime deps checking
     
     The condition was missing
-    (cherry picked from commit 161cb4ffe01ea2bf8d94a4c3f5e21dc279dacf00)
+
+commit f272c002f4ef6a74b00a699e96c506e186666aad
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Apr 5 00:17:02 2011 +0100
+
+    Unneeded Crimean Tatar variants removed from Romanian file
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=23544
+
+commit 187f749264990d00490dc9b7e793b5e13d0051f2
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Apr 5 00:14:49 2011 +0100
+
+    Fixed descriptions for Crimean Tatar layouts
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=35787
+
+commit 5f7a1b31d4cd9f42f8d5e9ac8bde3b9e16e2d99d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Apr 4 23:23:40 2011 +0100
+
+    Put consistency into Saami variants (descriptions)
+
+commit 9c8448b8c432e6a08d50a6858e3208f43730e71a
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Apr 4 23:19:11 2011 +0100
+
+    Small polish on descriptions, more consistency
+
+commit 4945e1c758f06687cd19c2d82460529daa9070d7
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Apr 4 23:13:41 2011 +0100
+
+    A number of group names synced with rules/base.xml.in
+
+commit e69b552147c4197cd536bdea3df801fb89c367c4
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Apr 3 21:42:55 2011 +0100
+
+    Updated group names for all a* files
 
 commit ee0654f28bfdbdc5fed3a0477c1d58a55d85127f
 Author: Sergey V. Udaltsov <svu@gnome.org>

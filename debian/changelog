@@ -1,3 +1,9 @@
+xkeyboard-config (2.3-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 03 Jun 2011 23:56:14 +0200
+
 xkeyboard-config (2.2.1-1) experimental; urgency=low
 
   * New upstream release:
