@@ -11,6 +11,7 @@ Build-Depends-Indep:
  libxml-parser-perl,
  x11-xkb-utils,
  libglib2.0-dev,
+ intltool,
 Standards-Version: 3.9.1
 Vcs-Git: git://git.debian.org/git/pkg-xorg/data/xkb-data
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/data/xkb-data.git
