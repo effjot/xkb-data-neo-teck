@@ -1,4 +1,4 @@
-xkeyboard-config (2.3-1) UNRELEASED; urgency=low
+xkeyboard-config (2.3-1) experimental; urgency=low
 
   * New upstream release:
     - Since 2.1 is still supposed to be the best for GNOME2, and since
@@ -6,7 +6,7 @@ xkeyboard-config (2.3-1) UNRELEASED; urgency=low
       rather than unstable.
   * Add intltool build-dep.
 
- -- Cyril Brulebois <kibi@debian.org>  Fri, 03 Jun 2011 23:56:14 +0200
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 04 Jun 2011 00:35:16 +0200
 
 xkeyboard-config (2.2.1-1) experimental; urgency=low
 
