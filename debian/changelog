@@ -1,3 +1,9 @@
+xkeyboard-config (2.3-2) UNRELEASED; urgency=low
+
+  * Upload to unstable, for GNOME3 (Closes: #652871).
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 21 Dec 2011 10:48:44 +0100
+
 xkeyboard-config (2.3-1) experimental; urgency=low
 
   * New upstream release:
