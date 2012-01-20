@@ -12,6 +12,8 @@ Build-Depends-Indep:
  x11-xkb-utils,
  libglib2.0-dev,
  intltool,
+ xsltproc,
+ xutils-dev (>= 1:7.6+2),
 Standards-Version: 3.9.1
 Vcs-Git: git://git.debian.org/git/pkg-xorg/data/xkb-data
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/data/xkb-data.git
