@@ -8,6 +8,7 @@ xkeyboard-config (2.5-1) UNRELEASED; urgency=low
   * Since there's a workaround on the server side already, do not use
     a high urgency, so that this new upstream release and its various
     changes can be tested for a while in unstable.
+  * Update URL in watch file.
 
  -- Cyril Brulebois <kibi@debian.org>  Fri, 20 Jan 2012 17:07:47 +0100
 
