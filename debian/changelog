@@ -1,4 +1,4 @@
-xkeyboard-config (2.5-1) UNRELEASED; urgency=low
+xkeyboard-config (2.5-1) unstable; urgency=low
 
   * New upstream release, including:
     - Hide ClearGrab/CloseGrabs actions behind an option.
@@ -12,7 +12,7 @@ xkeyboard-config (2.5-1) UNRELEASED; urgency=low
   * Add xsltproc, xutils-dev build-deps.
   * Keep /usr/share/man out of the udeb, due to a newly-added manpage.
 
- -- Cyril Brulebois <kibi@debian.org>  Fri, 20 Jan 2012 17:07:47 +0100
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 20 Jan 2012 18:21:03 +0100
 
 xkeyboard-config (2.3-2) unstable; urgency=low
 
