@@ -1,3 +1,16 @@
+xkeyboard-config (2.5-1) UNRELEASED; urgency=low
+
+  * New upstream release, including:
+    - Hide ClearGrab/CloseGrabs actions behind an option.
+  * To get those actions back, use the grab:break_action option. At
+    the moment, the corresponding actionve has been disabled on the
+    server side as a hot fix for CVE-2012-0064 (Closes: #656500).
+  * Since there's a workaround on the server side already, do not use
+    a high urgency, so that this new upstream release and its various
+    changes can be tested for a while in unstable.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 20 Jan 2012 17:07:47 +0100
+
 xkeyboard-config (2.3-2) unstable; urgency=low
 
   * Upload to unstable, for GNOME3 (Closes: #652871).

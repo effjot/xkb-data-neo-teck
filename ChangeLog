@@ -1,3 +1,499 @@
+commit f2426383a22ac3ee7bc4a03c51edba0345871664
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Jan 19 23:30:35 2012 +0000
+
+    Preparing 2.5
+
+commit 16b645db6909fd6a715742580e35aaf186ec4be6
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Jan 19 23:27:39 2012 +0000
+
+    Pre-release PO sync
+
+commit dc55259e52ef034e568a50beb43a80b3595e49e4
+Author: Daniel Stone <daniel@fooishbar.org>
+Date:   Thu Jan 19 16:36:16 2012 +1100
+
+    Hide ClearGrab/CloseGrabs actions behind an option
+    
+    Similar to how we put the Terminate mapping behind an option rather than
+    enabling it by default, put the ClearGrab/CloseGrab action handlers
+    behind an option too, so we don't ship 'break my screensaver'.  Oops.
+    
+    Signed-off-by: Daniel Stone <daniel@fooishbar.org>
+
+commit 9c1c2e3db0db7ffde3668aacaf81919fd829adeb
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Jan 19 23:21:41 2012 +0000
+
+    Fixed no(dvorak), AD12
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=44866
+
+commit ee03c309aebce674efb98a548cfaa6174498b2fa
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Jan 7 23:49:06 2012 +0000
+
+    Updated metainfo for apl layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=44057
+
+commit 77e38cbe4b11b1cbd760f337ddca97965bb35cef
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Dec 28 02:15:12 2011 +0000
+
+    Making consistent CTRL+SHIFT toggle
+    
+    The default switchers are changed to switch to next group.
+    The old behavior is kept in _bidir options
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=42931
+
+commit 75093402d75403b6bd8de4a5d4be7e4ad36673f2
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Dec 28 01:46:39 2011 +0000
+
+    Making consistent CTRL+ALT toggle
+    
+    The default switchers are changed to switch to next group.
+    The old behavior is kept in _bidir options
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=42931
+
+commit 86f2a0226feac7bd8297a164746a24d8165faf4d
+Merge: de45ece 3e3bae1
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Dec 26 12:30:23 2011 +0000
+
+    Merge branch 'master' of git+ssh://git.freedesktop.org/git/xkeyboard-config
+
+commit de45ece5ab09ab218998d35db3a9d0cb4686b546
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Dec 26 12:26:35 2011 +0000
+
+    Separating lalt_lshift_toggle option
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=43922
+    Now, alt_shift_toggle is composed of "right" and "left" blocks.  Also, it is one-direction ("Next") only.  For people who need both directions, the "bidir" option is introduced but not advertised in xml - because GUI tools usually belong to DEs that perform one-way circular layout switching.
+
+commit 3e3bae15e3268b963ee9f81cea716ea7732be4dd
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Dec 24 20:26:55 2011 +0000
+
+    updated apl layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=44057
+
+commit e92c4f65b6fb74eeb1772cc40ff89c5a1ff2c4ec
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Dec 22 00:50:22 2011 +0000
+
+    Removed overriding LFSH and RTSH
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=44035
+
+commit a3beae55c7f596c946109ca74f6411cd9cb0185c
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Thu Dec 15 15:53:55 2011 +1000
+
+    rules: Serbian keyboards are cyrillic by default, say so
+    
+    https://bugzilla.redhat.com/show_bug.cgi?id=755609
+    https://bugs.freedesktop.org/show_bug.cgi?id=43850
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
+commit 24b69ffb87dae21a9794dadce13812900248ec2d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Dec 4 22:31:14 2011 +0000
+
+    Fixed Congo-Kinshasa
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=43423
+
+commit ed3115f02a528ca597a6794427cea714e4d1a449
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Nov 30 00:30:25 2011 +0000
+
+    Removed unneeded .spec
+    
+    It is not properly maintained anyway - and distros are doing it themselves
+
+commit 1ce4ea6da2b998a1ed1b1c75aa3bd215ee9c4963
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Nov 29 23:43:50 2011 +0000
+
+    Small fixes to Icelandic
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=43173
+
+commit 3b06e46488f0a34183bc15aad0985ab6e4c1b8ce
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Nov 21 23:59:51 2011 +0000
+
+    Unneeded language removed from tw default variant
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=42820
+
+commit 81fc86a911b55481b9597bb9284b3beca460104c
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Nov 20 20:03:26 2011 +0000
+
+    Extend BackSpace to the 2nd group
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=43098
+
+commit a0e5adf1745a16e8b6a99cd5de82fccc22446e39
+Author: Daiki Ueno <ueno@unixuser.org>
+Date:   Wed Nov 9 17:19:52 2011 +0900
+
+    Add an option to map Zenkaku_Hankaku to Escape.
+
+commit f9bd9af7dad0aa6cb2419e88038ca5b15b08fde3
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Nov 17 19:40:23 2011 +0000
+
+    A couple of symbols added to tw layout for Paiwan
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=42820
+
+commit 569dd72bd4b26abd7a4d641c0417ebf50f1f48bd
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Oct 17 21:01:46 2011 +0100
+
+    Commented out broken level5 options
+    
+    Since lvl5:*cancel options are not working anyway - no need to show them.
+    https://bugs.freedesktop.org/show_bug.cgi?id=41621
+
+commit b918406daab7a70d12f69ee2fa2c964b32fd3bbd
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 16 23:16:19 2011 +0100
+
+    Fixed uk(mac)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=41813
+
+commit 680bd9ce893b665cb3cb2955b80d49c05d0221e1
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 16 21:48:18 2011 +0100
+
+    Improved description
+
+commit 566b887f8ecfda0719d445298ea8499bf53b4442
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 16 21:36:48 2011 +0100
+
+    Fix "mac style" numpad
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=41607
+
+commit d7a239e3a0a2af299b746bc478653e573d172699
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 9 22:57:28 2011 +0100
+
+    Small fix for cz layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=38017
+
+commit 5c8a983c99fcb641fe0d6bc3a2e0107cf631b36d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 9 22:48:00 2011 +0100
+
+    Improved descriptions for level3, level5 latches
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=41621
+
+commit 8b7ea2db10cf3ddb8bfc561d2b909739e48ba5f8
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 9 16:52:52 2011 +0100
+
+    Belarussian description: be->by
+
+commit f804659c882d00fc96e344a90d60dfde94e9a788
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Oct 9 16:49:29 2011 +0100
+
+    Adding some l10n comments
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=41617
+
+commit 1d1338afa6aa555c5f6c83d07fceec43a4d87f0d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Oct 5 22:26:26 2011 +0100
+
+    Levels 2-4 for CTRL+ALT are propagated from level 1
+
+commit f08995249158713eca9c200d85dbbed75a9ac6bc
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Oct 4 23:19:54 2011 +0100
+
+    preparing emergency 2.4.1
+
+commit df82ed7d78316202b7ca66a8df9a7a6111cfedc7
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Oct 1 20:46:57 2011 +0100
+
+    Fixing keys using CTRL+ALT type
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=41297
+    A number of keys used 2nd level for CTRL+ALT action,
+    now they are using level 5
+
+commit 3964cfa4acb0ee5c48e5479e313b9f9b6799d38d
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Sep 30 00:54:24 2011 +0100
+
+    Synced description
+
+commit feb645f9572cc859af23523df978f1f9679f7837
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Wed Sep 28 10:27:33 2011 +1000
+
+    rules: rename Bengali variants for 'in' to Bengali (India)
+    
+    This lines up the Bengali variants on the 'in' layout with other so that the
+    use of the 'Bengali' description is unique to the 'bd' layout.
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
+commit e1d469fac6868df31d115f3c14a54febfd3c5193
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Sep 27 22:36:06 2011 +0100
+
+    fixed version number
+
+commit 0a674932ec07fc66fb331e4954172b36827df354
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Sep 27 22:23:04 2011 +0100
+
+    preparing 2.4.0
+
+commit ca89d8a34827cb08de1be09a733ada74c3bc7fe4
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Sep 27 22:20:49 2011 +0100
+
+    syncing translations
+
+commit 80ace8a3ad189e76cc9e95faf2b183e35476d53a
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Sep 15 21:42:33 2011 +0100
+
+    Updated Cameroon layout
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=40795
+
+commit 305f4e2307d1dc2aa7cb5a6fa800f79d389b9291
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Aug 10 21:41:50 2011 +0100
+
+    There should not be dead keys in de(nodeadkeys)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=38468
+
+commit 6b47b2e5e95b5f53bd58e0e78bf324a260d789fa
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Aug 6 21:47:53 2011 +0100
+
+    Small reorganization in ctrl:* option names
+    
+    There was no convention for the option names.
+    Now, where it is possible, the convention is <keycode>_<keysym>
+    (when <keycode> is mapped to <keysym>)
+
+commit f0c4c16bf0fdb38494875dba117e38b363e99614
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Aug 6 21:35:23 2011 +0100
+
+    Added option to use RAlt as RCtrl
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=38493
+
+commit 0d61a4fa52899df44ec92dc46f827b568425baf9
+Author: Aldis Berjoza <aldis@bsdroot.lv>
+Date:   Sat Jul 30 12:22:22 2011 +0300
+
+    Updated Latvian Modern layout to lastest stable version
+
+commit be303743e59981ac055b72994894b91b2a046ba0
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Mon Jul 25 22:11:52 2011 +0100
+
+    Added missing mapping to Estonian
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=39350
+
+commit ea08c776d2850f6345c4665d36d492416d540fed
+Author: Daniel Stone <daniel@fooishbar.org>
+Date:   Tue Jun 21 18:01:42 2011 +0100
+
+    Compat: Add grab/window logging actions
+    
+    XF86LogWindowTree and XF86LogGrabInfo, included in very recent x11proto,
+    are new symbols to trigger the PrGrbs and PrWins actions, respectively.
+    These are new debugging actions which print useful information to the X
+    log.
+    
+    See http://lists.x.org/archives/xorg-devel/2011-June/023314.html for
+    more information.  (Note that there is a slight mismatch with some of
+    the action names there, which was fixed in a later revision of the
+    patch.)
+    
+    This should probably only be included in a new major release though, due
+    to http://cgit.freedesktop.org/xorg/app/xkbcomp/commit/?id=2a473b which
+    meant that using any unknown keysyms in an interp definition meant that
+    it turned into an Any+AnyOfOrNone(All) definition, so all your
+    non-action keys just dumped the window tree to the X log and did nothing
+    else.
+    
+    Signed-off-by: Daniel Stone <daniel@fooishbar.org>
+
+commit e0e41912718edb40d0f4296c61c0d4b8be0ce731
+Author: Daniel Stone <daniel@fooishbar.org>
+Date:   Tue Jun 21 18:01:41 2011 +0100
+
+    symbols/ma: Replace NoAction with NoSymbol
+    
+    I assume this is what they intended, and is a lot more sensible.
+    
+    Signed-off-by: Daniel Stone <daniel@fooishbar.org>
+
+commit 062b5bfcc59f9f6e4e11ba394bbe459af2a07b7e
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Jun 15 21:40:11 2011 +0100
+
+    Move switch VT mapping to 5th level, amending CTRL+ALT
+    
+    The idea is to allow functional keys to have mappings on 2-4 levels (with Shift and RAlt)
+    https://bugs.freedesktop.org/show_bug.cgi?id=11822
+
+commit 7ba36852440d38273ea895372a34f95edfcf63ea
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Wed Mar 2 10:53:34 2011 +1000
+
+    symbols: remove pc(function), srvr_ctrl(fkey2vt) does the same
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
+commit 5a69aa8ed8611aae2d0c140083a9b8af1f1cc6c5
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Jun 14 00:13:04 2011 +0100
+
+    temporary man pages should not annoy me
+
+commit c17f8b08740aed26687fd65c84e654a6cdc163a2
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Mon Jun 13 23:39:30 2011 +0100
+
+    Use XSL to generate man page from the rules XML
+    
+    Generate a man-page from the evdev.xml through the xslt/man.xsl stylesheet.
+    
+    Adds a requirement on the xorg util-macros and xsltproc.
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+    Reviewed-by: Dan Nicholson <dbn.lists@gmail.com>
+    Reviewed-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit b213892256576e43c569a965add7eae93f5be690
+Author: Kristof Szabo <kris@x.(none)>
+Date:   Sat Jun 11 23:21:50 2011 +0200
+
+    German layout with Hungarian letters added
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=38192
+
+commit bff391686c43db90ff4560230338f99922bb5bf3
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Jun 9 22:15:39 2011 +0100
+
+    Revert "Use XSL to generate man page from the rules XML"
+    
+    This reverts commit 35dc61af79dba32653ec97bd455b428b9cdb681d.
+
+commit 35dc61af79dba32653ec97bd455b428b9cdb681d
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Wed Jun 8 12:50:49 2011 +1000
+
+    Use XSL to generate man page from the rules XML
+    
+    Take evdev.xml and convert it into a man page, install it as
+    xkeyoard-config.7 man page to list all option that xkeyboard-config
+    provides.
+    
+    man.xsl is badly indented because I couldn't figure out how to make xsl
+    ignore whitespaces properly.
+    
+    Adds a requirement on the xorg util-macros.
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
+commit a9fc72984ee796049a49ea7f4a415fab579c5093
+Author: Promathesh Mandal <promathesh812004@gmail.com>
+Date:   Wed Jun 8 14:35:35 2011 +0530
+
+    Added four new Bengali Keyboard Layout
+
+commit eaa6a2638661723de69bd93b624ce7d2c2996daa
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Jun 8 20:27:09 2011 +0100
+
+    Fixed cz(qwerty)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=38017
+
+commit fd830658afb205d998fde9bf1a760347476884af
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sun Jun 5 01:29:43 2011 +0100
+
+    Got rid of de(qwerty)
+    
+    Permitted by Matej Kosik (the author), in favor of de(us)
+
+commit 84901d99bf00ff37765cf7c549c81afa930c907f
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Fri Jun 3 18:21:55 2011 +0100
+
+    First bit of hw information in the database
+
+commit 5c9920f653ae647d185918d0402f084ff0b21a1c
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Thu Jun 2 00:06:45 2011 +0100
+
+    Bump the version
+
+commit 32fac7642ebdd6d8a37fd7e569629c64f8a30d35
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Jun 1 21:31:33 2011 +0100
+
+    fixed descriptions for cm variants
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=37202
+
+commit f1f0ae9f2edf383b6dc08144cb87ae2525a7ca71
+Author: Vasyĺ V. Vercynśkyj <fuckel@ukr.net>
+Date:   Fri May 20 23:00:41 2011 +0300
+
+    slight improvements of ru(ruu) layout
+
+commit 162170bf3096dec7541b56763507add4bcbe8fa0
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Wed Jun 1 21:24:05 2011 +0100
+
+    Added de(us)
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=37237
+
+commit 81851539ded1bce1e54915939940cac0bc9b068f
+Author: Harshula Jayasuriya <harshula@gmail.com>
+Date:   Thu May 26 16:12:20 2011 +1000
+
+    lk: Change "Sinhala" to "Sinhala (phonetic)"
+    
+    Change "Sinhala" to "Sinhala (phonetic)" so that it is clear that
+    the layout is not the official Wijesekera layout. The Wijesekera
+    layout is too complex to be implmented in XKB.
+
 commit 0012006e23556fcc565a6ce2d7d265c28d876bff
 Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Tue May 31 20:15:03 2011 +0100
