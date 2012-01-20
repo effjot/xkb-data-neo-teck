@@ -2,7 +2,7 @@ xkeyboard-config (2.5-1) UNRELEASED; urgency=low
 
   * New upstream release, including:
     - Hide ClearGrab/CloseGrabs actions behind an option.
-  * To get those actions back, use the grab:break_action option. At
+  * To get those actions back, use the grab:break_actions option. At
     the moment, the corresponding actionve has been disabled on the
     server side as a hot fix for CVE-2012-0064 (Closes: #656500).
   * Since there's a workaround on the server side already, do not use
