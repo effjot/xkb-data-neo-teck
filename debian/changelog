@@ -10,6 +10,7 @@ xkeyboard-config (2.5-1) UNRELEASED; urgency=low
     changes can be tested for a while in unstable.
   * Update URL in watch file.
   * Add xsltproc, xutils-dev build-deps.
+  * Keep /usr/share/man out of the udeb, due to a newly-added manpage.
 
  -- Cyril Brulebois <kibi@debian.org>  Fri, 20 Jan 2012 17:07:47 +0100
 

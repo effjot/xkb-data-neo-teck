@@ -15,9 +15,10 @@ override_dh_auto_install:
 	# Regular deb:
 	$(MAKE) -C build install DESTDIR=$(CURDIR)/debian/xkb-data
 
-	# Treat the udeb as an exact copy, but remove messages/pkg-config:
+	# Treat the udeb as an exact copy, but remove messages/pkg-config/man-pages:
 	cp -r $(CURDIR)/debian/xkb-data/* $(CURDIR)/debian/xkb-data-udeb
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/locale
+	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/man
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/pkgconfig
 
 	# Now try and save some space, by getting rid of comments (in
