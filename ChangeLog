@@ -1,3 +1,23 @@
+commit 5d56941b7da36c181693cb5a57f2e41497b641c3
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Jan 31 22:39:55 2012 +0000
+
+    preparing 2.5.1
+
+commit 29cad6c02271fe1b43f310f95f4cda713191dbcf
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Tue Jan 31 22:39:40 2012 +0000
+
+    prerelease translation update
+
+commit a7e3baab0653b435e0b611ca25d6cfc83bdc2b0e
+Author: Sergey V. Udaltsov <svu@gnome.org>
+Date:   Sat Jan 21 09:03:27 2012 +0000
+
+    Fixed Armenian hyphen
+    
+    https://bugs.freedesktop.org/show_bug.cgi?id=45012
+
 commit f2426383a22ac3ee7bc4a03c51edba0345871664
 Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Thu Jan 19 23:30:35 2012 +0000
