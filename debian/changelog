@@ -1,3 +1,10 @@
+xkeyboard-config (2.5.1-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Use xz compression for binary packages (Closes: #683891).
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 05 Aug 2012 11:54:19 +0200
+
 xkeyboard-config (2.5.1-1) unstable; urgency=low
 
   * New upstream release:

@@ -33,5 +33,8 @@ override_dh_quilt_unpatch:
 	dh_quilt_unpatch
 	touch rules/base.o_k.part
 
+override_dh_builddeb:
+	dh_builddeb -- -Zxz
+
 %:
 	dh $@ --with quilt,autoreconf --builddirectory=build/
