@@ -1,3 +1,14 @@
+xkeyboard-config (2.5.1-3) UNRELEASED; urgency=low
+
+  * Cherry-picks from upstream:
+    - A couple of missing chars in gr(polytonic), added on levels 3, 4
+      (closes: #696126)
+    - Reverting broken fix for is keyboard
+    - symbols: ossmath is CTRL+ALT, not FOUR_LEVEL (closes: #657440)
+    - symbols/gr: fix comment (closes: #696125)
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 25 Dec 2012 12:28:27 +0100
+
 xkeyboard-config (2.5.1-2.1) unstable; urgency=low
 
   * Non-maintainer upload.
