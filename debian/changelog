@@ -1,3 +1,11 @@
+xkeyboard-config (2.5.1-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Preserve Shift modifier so GTK3 apps can properly differentiate between
+    F10 and Shift+F10 (Closes: #656685).
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 21 Sep 2012 18:12:52 +0200
+
 xkeyboard-config (2.5.1-2) unstable; urgency=low
 
   [ Ansgar Burchardt ]
