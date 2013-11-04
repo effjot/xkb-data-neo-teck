@@ -3,7 +3,8 @@
 xkb_base := /usr/share/X11/xkb
 
 override_dh_autoreconf:
-	dh_autoreconf -- sh -c 'intltoolize -c -f && autoreconf -vfi'
+	intltoolize -c -f
+	AUTOPOINT=true dh_autoreconf autoreconf -- -vfi
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
