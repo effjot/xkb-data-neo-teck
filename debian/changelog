@@ -7,6 +7,7 @@ xkeyboard-config (2.10.1-1) UNRELEASED; urgency=low
   * Disable autopoint, it causes build failure and we use intltoolize
     instead.
   * Switch to 3.0 (quilt) source format.
+  * Bump Standards-Version to 3.9.5, no changes needed.
 
  -- Dmitry Shachnev <mitya57@gmail.com>  Mon, 04 Nov 2013 18:07:05 +0400
 
