@@ -18,8 +18,6 @@ Signed-off-by: Cyril Brulebois <kibi@debian.org>
  rules/base.o_k.part |    2 ++
  3 files changed, 13 insertions(+), 0 deletions(-)
 
-diff --git a/keycodes/macintosh b/keycodes/macintosh
-index d41ac4b..d1e0be8 100644
 --- a/keycodes/macintosh
 +++ b/keycodes/macintosh
 @@ -36,6 +36,16 @@ default xkb_keycodes "macintosh" {
@@ -39,11 +37,9 @@ index d41ac4b..d1e0be8 100644
  xkb_keycodes "old" {
  
      minimum= 8;
-diff --git a/rules/base.m_k.part b/rules/base.m_k.part
-index dd0c391..794994c 100644
 --- a/rules/base.m_k.part
 +++ b/rules/base.m_k.part
-@@ -9,6 +9,7 @@
+@@ -7,6 +7,7 @@
   $applealu	=	macintosh(alukbd)
    macintosh_hhk	=	macintosh(hhk)
    macintosh_old	=	macintosh(old)
@@ -51,13 +47,8 @@ index dd0c391..794994c 100644
   $macs   	=	macintosh
    thinkpadz60	=	xfree86(thinkpadz60)
    *		=	xfree86
-diff --git a/rules/base.o_k.part b/rules/base.o_k.part
-index e69de29..53d2879 100644
---- a/rules/base.o_k.part
+--- /dev/null
 +++ b/rules/base.o_k.part
 @@ -0,0 +1,2 @@
 +  apple:badmap		=	+macintosh(badmap)
 +  apple:goodmap		=	+macintosh(goodmap)
--- 
-1.7.2.3
-
