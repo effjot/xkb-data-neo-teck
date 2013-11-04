@@ -3,6 +3,7 @@ xkeyboard-config (2.10.1-1) UNRELEASED; urgency=low
   * New upstream release.
   * Refresh revert-goodmap-badmap-for-apple.diff.
   * Drop preserve-shift.diff, applied upstream.
+  * Update debian/watch for new tarballs location.
 
  -- Dmitry Shachnev <mitya57@gmail.com>  Mon, 04 Nov 2013 18:07:05 +0400
 
