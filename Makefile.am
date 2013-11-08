@@ -1,11 +1,11 @@
 AUTOMAKE_OPTIONS = foreign
 
-SUBDIRS = compat geometry keycodes keymap po rules semantics symbols types docs man
+SUBDIRS = compat geometry keycodes po rules symbols types docs man
 
 pkgconfigdir = $(datadir)/pkgconfig
 pkgconfig_DATA = xkeyboard-config.pc
 
-EXTRA_DIST=config.rpath COPYING CREDITS README \
+EXTRA_DIST=config.rpath COPYING README \
        autogen.sh \
        xkeyboard-config.pc.in \
        intltool-extract.in intltool-merge.in intltool-update.in
