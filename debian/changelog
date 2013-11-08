@@ -1,15 +1,15 @@
 xkeyboard-config (2.10.1-1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * New upstream release (closes: #718730).
   * Refresh revert-goodmap-badmap-for-apple.diff.
   * Drop preserve-shift.diff, applied upstream.
-  * Update debian/watch for new tarballs location.
+  * Update debian/watch for new tarballs location (closes: #727812).
   * Disable autopoint, it causes build failure and we use intltoolize
     instead.
   * Switch to 3.0 (quilt) source format.
   * Bump Standards-Version to 3.9.5, no changes needed.
 
- -- Dmitry Shachnev <mitya57@gmail.com>  Mon, 04 Nov 2013 18:07:05 +0400
+ -- Dmitry Shachnev <mitya57@gmail.com>  Fri, 08 Nov 2013 16:26:21 +0400
 
 xkeyboard-config (2.5.1-3) unstable; urgency=low
 
