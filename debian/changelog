@@ -6,7 +6,6 @@ xkeyboard-config (2.10.1-1) UNRELEASED; urgency=low
   * Update debian/watch for new tarballs location (closes: #727812).
   * Disable autopoint, it causes build failure and we use intltoolize
     instead.
-  * Switch to 3.0 (quilt) source format.
   * Bump Standards-Version to 3.9.5, no changes needed.
 
  -- Dmitry Shachnev <mitya57@gmail.com>  Fri, 08 Nov 2013 16:26:21 +0400
