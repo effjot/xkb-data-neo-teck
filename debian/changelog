@@ -1,3 +1,9 @@
+xkeyboard-config (2.10.1-2) UNRELEASED; urgency=medium
+
+  * Mark xkb-data as "Multi-Arch: foreign" (Closes: #677884).
+
+ -- Sven Joachim <svenjoac@gmx.de>  Thu, 27 Feb 2014 18:47:40 +0100
+
 xkeyboard-config (2.10.1-1) unstable; urgency=low
 
   [ Dmitry Shachnev ]
