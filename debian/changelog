@@ -1,4 +1,4 @@
-xkeyboard-config (2.11-1) UNRELEASED; urgency=medium
+xkeyboard-config (2.11-1) unstable; urgency=medium
 
   [ Lior Kaplan ]
   * New upstream release
@@ -10,7 +10,10 @@ xkeyboard-config (2.11-1) UNRELEASED; urgency=medium
   [ Sven Joachim ]
   * Mark xkb-data as "Multi-Arch: foreign" (Closes: #677884).
 
- -- Julien Cristau <jcristau@debian.org>  Fri, 02 May 2014 12:26:45 +0300
+  [ Julien Cristau ]
+  * Fix grab:debug reference in the xml file.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 13 May 2014 00:09:58 +0200
 
 xkeyboard-config (2.10.1-1) unstable; urgency=low
 
