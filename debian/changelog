@@ -3,6 +3,8 @@ xkeyboard-config (2.12-1) UNRELEASED; urgency=medium
   * New upstream release
     + revert Russian layout change from 2.11 (closes: #748521)
     + revert it/fr/nl numeric keypad separator change (closes: #748734, #749112)
+  * Fix right control key on fr(oss) layout to behave like control again
+    (closes: #733757)
 
  -- Julien Cristau <jcristau@debian.org>  Fri, 06 Jun 2014 17:10:05 +0200
 
