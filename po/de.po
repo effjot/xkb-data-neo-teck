@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xkeyboard-config-2.11.99\n"
 "Report-Msgid-Bugs-To: svu@users.sourceforge.net\n"
 "POT-Creation-Date: 2014-05-18 00:11+0100\n"
-"PO-Revision-Date: 2014-05-18 13:51+0100\n"
+"PO-Revision-Date: 2014-09-06 22:18+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -3972,6 +3972,14 @@ msgstr "Tastenkombination zum erzwungenen Beenden des X-Servers"
 #: ../rules/base.xml.in.h:1066
 msgid "Ctrl + Alt + Backspace"
 msgstr "Strg + Alt + Löschtaste"
+
+#: ../rules/base.xml.in.h:1067
+msgid "Options for the Truly Ergonomic Computer Keyboard (TECK)"
+msgstr "Optionen für die „Truly Ergonomic“-Tastatur (TECK)"
+
+#: ../rules/base.xml.in.h:1068
+msgid "Map left space key to Tab (DIP switch 3 must be off)"
+msgstr "Linke Leertaste als Tab (DIP-Schalter 3 muß aus sein)"
 
 #: ../rules/base.extras.xml.in.h:1
 msgid "apl"
