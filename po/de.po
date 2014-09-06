@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xkeyboard-config-2.11.99\n"
 "Report-Msgid-Bugs-To: svu@users.sourceforge.net\n"
 "POT-Creation-Date: 2014-05-18 00:11+0100\n"
-"PO-Revision-Date: 2014-09-06 22:23+0200\n"
+"PO-Revision-Date: 2014-09-06 22:37+0200\n"
 "Last-Translator: Florian Jenn <devel@effjot.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -3980,6 +3980,10 @@ msgstr "Optionen für die „Truly Ergonomic“-Tastatur (TECK)"
 #: ../rules/base.xml.in.h:1068
 msgid "Map left space key to Tab (DIP switch 3 must be off)"
 msgstr "Linke Leertaste als Tab (DIP-Schalter 3 muß aus sein)"
+
+#: ../rules/base.xml.in.h:1069
+msgid "Adaptions for the German NEO layout (DIP switch 1 must be off)"
+msgstr "Anpassungen für das deutsche NEO-Layout (DIP-Schalter 1 muß aus sein)"
 
 #: ../rules/base.extras.xml.in.h:1
 msgid "apl"
