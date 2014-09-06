@@ -6896,5 +6896,17 @@
         </configItem>
       </option>
     </group>
+    <group allowMultipleSelection="true">
+      <configItem>
+        <name>teck</name>
+        <_description>Options for the Truly Ergonomic Computer Keyboard (TECK)</_description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>teck:leftspace_tab</name>
+          <_description>Map left space key to Tab (DIP switch 3 must be off)</_description>
+        </configItem>
+      </option>
+    </group>
   </optionList>
 </xkbConfigRegistry>
