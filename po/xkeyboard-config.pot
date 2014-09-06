@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: svu@users.sourceforge.net\n"
-"POT-Creation-Date: 2014-05-18 00:11+0100\n"
+"POT-Creation-Date: 2014-09-06 22:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4011,6 +4011,14 @@ msgstr ""
 
 #: ../rules/base.xml.in.h:1066
 msgid "Ctrl + Alt + Backspace"
+msgstr ""
+
+#: ../rules/base.xml.in.h:1067
+msgid "Options for the Truly Ergonomic Computer Keyboard (TECK)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:1068
+msgid "Map left space key to Tab (DIP switch 3 must be off)"
 msgstr ""
 
 #: ../rules/base.extras.xml.in.h:1
