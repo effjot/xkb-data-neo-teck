@@ -8,6 +8,7 @@ dell everex fujitsu \
 hhk hp keytronic kinesis \
 macintosh microsoft nec nokia \
 northgate pc sanwa sony thinkpad \
-sun typematrix winbook README
+sun typematrix winbook README \
+trulyergonomic
 
 EXTRA_DIST = $(geom_DATA)

@@ -1,0 +1,243 @@
+// Geometry specification for Truly Ergonomic Computer Keyboard (TECK)
+// Created by Florian Jenn <devel@effjot.net>,
+//   based on the geometry file by Anders Waldenborg:
+//   https://github.com/wanders/blowrak/blob/master/xkb/geometry/trulyergonomic
+// Compatible models: Model 209
+
+default xkb_geometry "model209" {
+
+    description = "Truly Ergonomic Computer Keyboard (TECK) Model 209";
+    width  = 330;
+    height = 175;
+
+    shape.cornerRadius = 1;
+    shape "NORM" { { [ 18, 18] }, { [1, 1], [17, 15] } };
+    shape "WIDE" { { [ 38, 18] }, { [1, 1], [37, 15] } };
+    shape "LED"  { cornerRadius = 1.5, { [ 3,  3] } };
+    shape "EDGE" { cornerRadius = 4,   { [ 18, 0 ], [ 312, 0 ], [ 328, 155 ], [ 165, 172 ], [ 2, 155] } };
+
+    shape "LOGOKEY"  { { [ 16, 18] }, { [1, 1], [15, 15] } };
+    shape "DELKEY"   { { [ 20, 18] }, { [1, 1], [19, 15] } };
+    shape "TABKEY"   { { [ 24, 18] }, { [1, 1], [23, 15] } };
+    shape "BSKEY"    { { [ 28, 18] }, { [1, 1], [27, 15] } };
+    shape "ENTERKEY" { { [ 32, 18] }, { [1, 1], [31, 15] } };
+    shape "SPACEBAR" { { [ 38, 18] }, { [1, 1], [37, 15] } };
+
+
+    outline "Edges" {
+	top   = 0;
+	left  = 0;
+	shape = "EDGE";
+    };
+
+    section "LeftCross" {
+        top   = 118;
+        left  =  49.5;
+        angle =   6;
+        row {
+    	    top = 10;
+    	    vertical = True;
+	    keys { <HOME> };
+        };
+        row {
+            top  =   -2;
+            left =   20;
+            key.gap = 2;
+    	    vertical = True;
+    	    keys { <PGUP>, <PGDN> };
+        };
+        row {
+    	    top  = 10;
+            left = 40;
+            vertical = True;
+    	    keys { <END> };
+        };
+    };
+
+    section "RightCross" {
+        top   = 118;
+        left  = 282.5;
+        angle =  -6;
+        row {
+    	    top  =  10;
+	    left = -20;
+            vertical = True;
+	    keys { <RGHT> };
+        };
+        row {
+            top  =   -2;
+            left =  -40;
+            key.gap = 2;
+            vertical = True;
+    	    keys { <UP>, <DOWN> };
+        };
+        row {
+            top  =  10;
+    	    left = -60;
+    	    vertical = True;
+    	    keys { <LEFT> };
+        };
+    };
+
+    section "LeftSpace" {
+        top   = 126;
+        left  = 109;
+        angle =   6;
+        key.shape = "SPACEBAR";
+        row {
+            keys { <MENU> }; // updated firmware
+        };
+    };
+
+    section "RightSpace" {
+        top   = 130;
+        left  = 183.5;
+        angle =  -6;
+        key.shape = "SPACEBAR";
+        row {
+            keys { <SPCE> };
+        };
+    };
+
+    section "TopRow" {
+        top    =  2;
+        left   = 20;
+	key.gap = 2;
+	key.shape = "NORM";
+	row {
+	    keys { <ESC>,
+                   { <FK01>, gap = 4 }, <FK02>, <FK03>, <FK04>,
+		   { <FK05>, gap = 4 }, <FK06>, <FK07>, <FK08>,
+                   { <FK09>, gap = 4 }, <FK10>, <FK11>, <FK12>,
+                   { <DELE>, gap = 4 }
+	    };
+	};
+    };
+
+    section "MidColumn" {
+        top  =  51;
+        left = 157; // 165mm - (16mm/2)
+	row {
+	    keys { {<LWIN>, "LOGOKEY" } };
+	};
+	row {
+            top  = 20;
+            left = -2;
+	    keys { { <HENK>, "DELKEY" } };
+	};
+	row {
+            top  = 40;
+            left = -4;
+	    keys { { <TAB>, "TABKEY" } };
+	};
+	row {
+            top  = 60;
+            left = -6;
+	    keys { { <BKSP>, "BSKEY" } };
+	};
+	row {
+            top  = 80;
+            left = -8;
+	    keys { { <RTRN>, "ENTERKEY" } };
+	};
+    };
+
+    section "MiniRow" {
+        top   =  22;
+        left  = 134; // 165mm - (3*18mm + 4*2mm)/2
+	key.gap = 2;
+	key.shape = "NORM";
+	row { // you can  use <SCLK> as fake key for FN to make Gnome keyboard display work
+	    keys { <CAPS>, { <FN>, color = "grey15" }, <NMLK> };
+	};
+    };
+
+    section "Left" {
+	top   =  34;
+	left  =  16;
+        angle =   6;
+        key.gap = 2;
+        row.vertical = True;
+	row {
+	    left = 2;
+	    keys { <LSGT>, <BKSL>, { <LFSH>, "WIDE"}, { <LCTL>, "WIDE"}, <HKTG> };
+	};
+	row {
+	    left = 22;
+	    keys { <TLDE>, <AB10>, { <LALT>, gap = 42 } };
+	};
+	row {
+	    left = 42;
+	    keys { <AE01>, <AD01>, <AC01>, <AB01> };
+	};
+	row {
+            top  = -2.5;
+	    left = 62;
+	    keys { <AE02>, <AD02>, <AC02>, <AB02> };
+	};
+	row {
+            top  = -5;
+	    left = 82;
+	    keys { <AE03>, <AD03>, <AC03>, <AB03> };
+	};
+	row {
+	    left = 102;
+            top  =  -2.5;
+	    keys { <AE04>, <AD04>, <AC04>, <AB04> };
+	};
+	row {
+	    left = 122;
+	    keys { <AE05>, <AD05>, <AC05>, <AB05> };
+	};
+    };
+
+    section "Right" {
+	top   =  34;
+	left  = 316;
+        angle =  -6;
+        key.gap = 2;
+        row.vertical = True;
+	row {
+	    left = -22;
+	    keys { <AE12>, <AD12>, { <AB11>, gap = 42 } };
+	};
+	row {
+	    left = -42;
+	    keys { <AE11>, <AD11>, { <RTSH>, "WIDE" }, { <RCTL>, "WIDE" }, <RALT> };
+	};
+	row {
+	    left = -62;
+	    keys { <AE10>, <AD10>, <AC10>, <AC11> };
+	};
+	row {
+            top  =  -2.5;
+	    left = -82;
+	    keys { <AE09>, <AD09>, <AC09>, <AB09> };
+	};
+	row {
+            top =    -5;
+	    left = -102;
+	    keys { <AE08>, <AD08>, <AC08>, <AB08> };
+	};
+	row {
+            top =    -2.5;
+	    left = -122;
+	    keys { <AE07>, <AD07>, <AC07>, <AB07> };
+	};
+	row {
+	    left = -142;
+	    keys { <AE06>, <AD06>, <AC06>, <AB06> };
+	};
+    };
+
+
+    // Indicator LEDs
+
+    indicator.shape    = "LED";
+    indicator.onColor  = "blue3";
+    indicator.offColor = "blue";
+    indicator.top      = 33.5;
+    indicator "Caps Lock" { left = 143.5; };
+    indicator "Num Lock"  { left = 183.5; };
+
+};

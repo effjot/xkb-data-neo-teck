@@ -23,6 +23,7 @@
  $macs		=	macintosh(macintosh)
   hhk		=	hhk(basic)
   kinesis	=	kinesis(model100)
+  trulyergonomic =      trulyergonomic(model209)
  $nokiamodels	=	nokia(%m)
   sun_type6_jp          =   sun(type6jp)
   sun_type6_usb         =   sun(type6)
