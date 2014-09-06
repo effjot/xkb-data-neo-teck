@@ -1,7 +1,9 @@
 // Options for the Truly Ergonomic Computer Keyboard (TECK)
 // Created by Florian Jenn <devel@effjot.net>
 
+
 // Map Tab to the left space bar.  These definitions have been copied from the NEO layout in file 'de'.
+
 partial alphanumeric_keys
 xkb_symbols "leftspace_tab" {
     key.type[Group1] = "EIGHT_LEVEL";
@@ -9,4 +11,51 @@ xkb_symbols "leftspace_tab" {
     key  <JPCM> { [ Tab,                     ISO_Left_Tab,            Multi_key,               ISO_Level5_Lock,         NoSymbol,                NoSymbol,                NoSymbol,                ISO_Level5_Lock          ] };
     // for upgraded firmware
     key  <MENU> { [ Tab,                     ISO_Left_Tab,            Multi_key,               ISO_Level5_Lock,         NoSymbol,                NoSymbol,                NoSymbol,                ISO_Level5_Lock          ] };
+};
+
+
+// Adaptions for the German NEO layout
+
+partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "neo" {
+
+    // Exchange j and y places; j gets y's M4 meaning (period) because more useful in the "num block"
+
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
+    key <AC11> { [ j, J, semicolon,	Greek_theta,    period,	KP_Decimal,     Greek_THETA,	NoSymbol ] };
+    key <AB10> { [ y, Y, at,	Greek_upsilon,          period,	KP_Decimal,	nabla,		NoSymbol ] };
+
+
+    // Put deadkeys T1, T2, T3 on keys "backslash", "grave", "acute".
+    // This frees up "plus" key; use it as keypad plus, additionally with "=" when shifted.
+
+    key.type[Group1] = "EIGHT_LEVEL";
+    key <BKSL> { [ dead_circumflex, dead_caron,	U21BB,		U02DE,		dead_abovedot,		Pointer_EnableKeys, dead_belowdot,	NoSymbol ] };
+    key <TLDE> { [ dead_grave,	dead_cedilla,	dead_abovering,	dead_dasia,	dead_diaeresis,		NoSymbol,	dead_macron,	NoSymbol ] };
+    key <LSGT> { [ dead_acute,	dead_tilde,	dead_stroke,	dead_psili,	dead_doubleacute,	NoSymbol,	dead_breve,	NoSymbol ] };
+    key <AE12> { [ KP_Add,	equal,		plusminus,	U2295,		U2213,			NoSymbol,	U2214,		NoSymbol ] };
+
+
+    // M3 and M4 on central column (keys labelled Tab and Del).
+    // Copied from level3(caps_switch) and level5(lsgt_switch).
+
+    key.type[Group1] = "ONE_LEVEL";
+    key <TAB>  { [ ISO_Level3_Shift ] };
+    key <HKTG> { [ ISO_Level3_Shift ] };
+    key <AB11> { [ ISO_Level3_Shift ] };
+    include "level3(modifier_mapping)"
+
+    key <HENK> { [ ISO_Level5_Shift ] };
+    include "level5(modifier_mapping)"
+
+
+    // Restore Caps_Lock function (standard NEO changed it to M3)
+
+    key <CAPS> { [ Caps_Lock ] };
+
+
+    // Restore Num_Lock function.  Due to Firmware bug, this key still also sends VolumeDown, anyway.
+
+    key <NMLK> { [ Num_Lock ] };
+
 };

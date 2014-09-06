@@ -6907,6 +6907,12 @@
           <_description>Map left space key to Tab (DIP switch 3 must be off)</_description>
         </configItem>
       </option>
+      <option>
+        <configItem>
+          <name>teck:neo</name>
+          <_description>Adaptions for the German NEO layout (DIP switch 1 must be off)</_description>
+        </configItem>
+      </option>
     </group>
   </optionList>
 </xkbConfigRegistry>
